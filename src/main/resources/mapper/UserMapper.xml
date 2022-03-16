@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.myblog.dao.UserDao">
+
+    <sql id="BASE_TABLE">
+        t_user
+    </sql>
+
+    <sql id="BASE_COLUMN">
+        id,avatar,create_time,email,nick_name,password,type,update_time,username
+    </sql>
+
+    <!--查询用户通过用户名和密码-->
+    <select id="findByUsernameAndPassword" resultType="user">
+        select
+        <include refid="BASE_COLUMN"/>
+        from
+        <include refid="BASE_TABLE"/>
+        <where>
+            <if test="username!=null">
+                and username = #{username,jdbcType=VARCHAR}
+            </if>
+            <if test="password!=null">
+                and password = #{password,jdbcType=VARCHAR}
+            </if>
+        </where>
+    </select>
+
+</mapper>
