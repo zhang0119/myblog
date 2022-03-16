@@ -1,0 +1,14 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/my_blog?useSSL=false
+        username: root
+        password: 546359
+
+logging:
+    config: classpath:logback-spring.xml
+    level:
+        root: warn
+        com.example: info
+    file:
+        name: log/blog-prod.log
