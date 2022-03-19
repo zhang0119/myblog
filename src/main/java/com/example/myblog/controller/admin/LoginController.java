@@ -31,7 +31,7 @@ public class LoginController {
      * 跳转到登录页面
      * @return 返回到登录页
      */
-    @GetMapping()
+    @GetMapping(value={"","/","/login"})
     public String loginPage(){
         return "admin/login";
     }
@@ -49,6 +49,7 @@ public class LoginController {
                         @RequestParam("password")String password,
                         HttpSession session,
                         RedirectAttributes attributes){
+        //检查用户是否存在于数据库中
         User user = userService.checkUser(username, password);
 
         if(user!=null){
@@ -56,6 +57,7 @@ public class LoginController {
             session.setAttribute("user",user);
             return "admin/index";
         }else{
+            //如果用户为空，说明这个用户是不存在于数据库中的，返回错误信息提示用户
             attributes.addFlashAttribute("message","用户名和密码错误!");
             return "redirect:/admin";
         }
@@ -63,9 +65,10 @@ public class LoginController {
 
     /**
      * 注销用户
-     * @param session session域对象
-     * @return 返回到登录页面
+     * @param session 保存用户数据的session域对象
+     * @return 返回到登录页
      */
+    @GetMapping("/logout")
     public String logout(HttpSession session){
         session.removeAttribute("user");
         return "redirect:/admin";

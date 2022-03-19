@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,18 +16,18 @@
     <div class="ui inverted secondary stackable menu">
       <h2 class="ui olive header item" style="font-family: STSong">管理后台</h2>
       <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>文章管理</a>
-      <a href="#" class="m-item item m-mobile-hide"><i class="clone outline icon"></i>分类管理</a>
+      <a href="#" th:href="@{/admin/types}" class="m-item item m-mobile-hide"><i class="clone outline icon"></i>分类管理</a>
       <a href="#" class="m-item item m-mobile-hide"><i class="pencil alternate icon"></i>友链管理</a>
       <a href="#" class=" m-item item m-mobile-hide"><i class="image icon"></i>相册管理</a>
       <div class="right m-item m-mobile-hide menu">
         <div class="ui dropdown  item">
           <div class="text">
-            <img class="ui avatar image" src="../../static/images/me.jpg">
+            <img class="ui avatar image" th:src="@{/images/me.jpg}" src="../../static/images/me.jpg">
             <span>oneStar</span>
           </div>
           <i class="dropdown icon"></i>
           <div class="menu">
-            <a href="#" class="item">注销</a>
+            <a href="#" th:href="@{/admin/logout}" class="item">注销</a>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@
         <p align="center">念念不忘，必有回响</p>
       </div>
 
-      <img src="../../static/images/backimg.jpg" alt="" class="ui rounded bordered fluid image">
+      <img th:src="@{/images/backimg.jpg}" src="../../static/images/backimg.jpg" alt="" class="ui rounded bordered fluid image">
     </div>
   </div>
 
@@ -61,8 +61,8 @@
       <div class="four wide column">
         <div style="font-size: large;font-weight: bold" class="ui inverted m-text-thin m-text-spaced m-margin-top-max" >联系我</div>
         <div class="ui inverted link list">
-          <div href="#" class="m-text-thin">Email：onestarlr@hotmail.com</div>
-          <div href="#" class="m-text-thin">QQ：316392836</div>
+          <div href="#" class="m-text-thin">Email: 546359148@qq.com</div>
+          <div href="#" class="m-text-thin">QQ：546359148</div>
         </div>
       </div>
 

@@ -3,6 +3,7 @@ package com.example.myblog.service.impl;
 import com.example.myblog.dao.UserDao;
 import com.example.myblog.entity.User;
 import com.example.myblog.service.UserService;
+import com.example.myblog.utils.MD5Util;
 import org.springframework.stereotype.Service;
 
 /**
@@ -23,6 +24,8 @@ public class UserServiceImpl implements UserService {
     @Override
     public User checkUser(String username, String password) {
 
-        return userDao.findByUsernameAndPassword(username, password);
+        String pwd = MD5Util.code(password);
+
+        return userDao.findByUsernameAndPassword(username, pwd);
     }
 }
