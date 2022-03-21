@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.myblog.dao.BlogDao">
+
+    <sql id="BASE_TABLE">
+        t_blog
+    </sql>
+
+    <sql id="BASE_COLUMN">
+        id,title,content,first_picture,flag,views,comment_count,appreciation,share_statement,
+        comment_able,published,recommend,create_time,update_time,type_id,user_id,description
+    </sql>
+
+    <!--int saveBlog(Blog blog);-->
+    <insert id="saveBlog" parameterType="blog">
+        insert into t_blog(id,title,content,first_picture,flag,views,
+        comment_count,appreciation,share_statement,comment_able,published,
+        recommend,create_time,update_time,type_id,user_id,description)
+        values(#{id},#{title},#{content},#{firstPicture},#{flag},#{views},
+               #{commentCount},#{appreciation},#{shareStatement},#{commentAble},#{published},
+               #{recommend},#{createTime},#{updateTime},#{typeId},#{userId},#{description});
+    </insert>
+
+    <!--List<BlogQuery> getAllBlogQuery();
+        查询文章列表多对一配置
+        resultMap属性：用于映射查询结果，这里定义封装BlogQuery的resultMap
+        association属性：用于一对一和多对一的关系，把Type实体映射从association元素中提取出来，
+        用一个resultMap元素表示
+        javaType属性：用来指定对象所属的java数据类型
+    -->
+    <resultMap id="blog" type="com.example.myblog.queryvo.BlogQuery">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="recommend" column="recommend"/>
+        <result property="published" column="published"/>
+        <result property="typeId" column="type_id"/>
+        <association property="type" javaType="com.example.myblog.entity.Type">
+            <id property="id" column="id"/>
+            <result property="name" column="name"/>
+        </association>
+    </resultMap>
+
+    <!--查询文章管理列表-->
+    <select id="getAllBlogQuery" resultMap="blog">
+        select b.id,b.title,b.update_time,b.recommend,b.published,b.type_id,
+        t.id,t.name
+        from
+        t_blog b
+        left outer join
+        t_type t
+        on b.type_id = t.id
+        order by b.update_time desc
+    </select>
+</mapper>
