@@ -57,12 +57,14 @@
 <!--中间内容-->
 <div  class="">
     <div class="ui container">
+
         <div  class="ui secondary segment form">
             <input type="hidden" name="page" >
             <div class="inline fields">
                 <div class="field">
                     <input type="text" name="title" placeholder="标题">
                 </div>
+
                 <div class="field">
                     <div class="ui labeled action input">
                         <div class="ui type selection dropdown">
@@ -77,19 +79,14 @@
                     </div>
 
                 </div>
-                <!--<div class="field">-->
-                <!--<div class="ui checkbox">-->
-                <!--<input type="checkbox" id="recommend" name="recommend">-->
-                <!--<label for="recommend">推荐</label>-->
-                <!--</div>-->
-                <!--</div>-->
                 <div class="field">
-                    <button  type="button" id="search-btn" class="ui mini teal basic button"><i class="search icon"></i>搜索</button>
+                    <button type="button" id="search-btn" class="ui mini teal basic button"><i class="search icon"></i>搜索</button>
                 </div>
             </div>
         </div>
 
         <div id="table-container">
+            <!--这里的blogList是接受从后端查询出来的blogList-->
             <table th:fragment="blogList" class="ui compact teal table">
                 <thead>
                 <tr align="center">
@@ -112,7 +109,9 @@
                     <td th:text="${blog.published}?'发布':'草稿'"></td>
                     <td th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}">2020-01-02 05:20</td>
                     <td>
-                        <!--th:href="@{/admin/types/{id}/input(id=${type.id})}"-->
+                        <!--th:href="@{/admin/types/{id}/input(id=${type.id})}"
+                            编辑博客需要携带博客的id，而新增博客不需要
+                        -->
                         <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal basic button">编辑</a>
                         <a href="#" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" onclick="return confirm('确定要删除该文章吗？三思啊! 删了可就没了！')" class="ui mini red basic button">删除</a>
                     </td>
@@ -144,9 +143,10 @@
                 </tfoot>
             </table>
 
-            <div class="ui success message">
+            <!--如果消息不为空，则输入提示信息，否则就不输出提示信息-->
+            <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
                 <i class="close icon"></i>
-                <div class="" th:text="|提示: ${message}">提示：操作成功！</div>
+                <div class="" th:text="|提示: ${message}"></div>
             </div>
 
         </div>

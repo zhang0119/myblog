@@ -54,4 +54,51 @@
         on b.type_id = t.id
         order by b.update_time desc
     </select>
+
+    <!--删除博客void deleteBlog(Long id);-->
+    <delete id="deleteBlog">
+        delete from t_blog where id = #{id}
+    </delete>
+
+    <!--ShowBlog getBlogById(Long id);-->
+    <select id="getBlogById" resultType="com.example.myblog.queryvo.ShowBlog">
+        select b.id,b.flag,b.title,b.content,b.type_id,
+               b.first_picture,b.description,b.recommend,
+               b.published,b.share_statement,b.appreciation,b.comment_able
+        from
+        t_blog b
+        where
+        b.id = #{id};
+    </select>
+
+    <!--
+    编辑修改文章
+    int updateBlog(ShowBlog showBlog)-->
+    <update id="updateBlog" parameterType="com.example.myblog.queryvo.ShowBlog">
+        update t_blog set published = #{published},flag=#{flag},title=#{title},
+        content=#{content},type_id=#{typeId},first_picture = #{firstPicture},
+        description = #{description},recommend = #{recommend},
+        share_statement = #{shareStatement}, appreciation = #{appreciation},
+        comment_able= #{commentAble} ,update_time = #{updateTime} where id = #{id};
+    </update>
+
+    <!--List<BlogQuery> searchByTitleAndType(SearchBlog searchBlog);-->
+    <select id="searchByTitleAndType" parameterType="com.example.myblog.queryvo.SearchBlog" resultMap="blog">
+        <bind name="pattern" value="'%' + title + '%'" />
+        select b.id,b.title,b.update_time,b.recommend,b.type_id,t.id,t.name from t_blog b ,t_type t
+        <where>
+            <if test="1 == 1">
+                b.type_id = t.id
+            </if>
+            <if test="typeId != null">
+                and b.type_id = #{typeId}
+            </if>
+            <if test="title != null">
+                and b.title like #{pattern}
+            </if>
+        </where>
+    </select>
+
+
+
 </mapper>
