@@ -2,9 +2,7 @@ package com.example.myblog.service.impl;
 
 import com.example.myblog.dao.BlogDao;
 import com.example.myblog.entity.Blog;
-import com.example.myblog.queryvo.BlogQuery;
-import com.example.myblog.queryvo.SearchBlog;
-import com.example.myblog.queryvo.ShowBlog;
+import com.example.myblog.queryvo.*;
 import com.example.myblog.service.BlogService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -92,5 +90,62 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public List<BlogQuery> getBlogBySearch(SearchBlog searchBLog) {
         return blogDao.searchByTitleAndType(searchBLog);
+    }
+
+    /**
+     * 得到所有首页推荐的博客
+     * @return 返回得到第一页的所有博客
+     */
+    @Override
+    public List<FirstPageBlog> getAllFirstPageBlog() {
+        return blogDao.getFirstPageBlog();
+    }
+
+    /**
+     * 得到推荐的博客
+     */
+    @Override
+    public List<RecommendBlog> getRecommendedBlog() {
+        return blogDao.getAllRecommendBlog();
+    }
+
+    /**
+     * 搜索博客
+     */
+    @Override
+    public List<FirstPageBlog> getSearchBlog(String query) {
+        return blogDao.getSearchBlog(query);
+    }
+
+    /**
+     * 得到全部的博客
+     */
+    @Override
+    public Integer getBlogTotal() {
+        return blogDao.getBlogTotal();
+    }
+
+    /**
+     * 得到博客的浏览量
+     */
+    @Override
+    public Integer getBlogViewTotal() {
+        return blogDao.getBlogViewTotal();
+    }
+
+    /**
+     * 得到博客的全部评论
+     */
+    @Override
+    public Integer getBlogCommentTotal() {
+        return blogDao.getBlogCommentTotal();
+    }
+
+    /**
+     * 得到博客的全部消息
+     */
+    @Override
+    public Integer getBlogMessageTotal() {
+        return blogDao.getBlogMessageTotal();
     }
 }

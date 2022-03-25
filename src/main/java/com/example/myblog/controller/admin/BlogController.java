@@ -85,6 +85,7 @@ public class BlogController {
         blog.setTypeId(blog.getType().getId());
         //设置用户id
         blog.setUserId(blog.getUser().getId());
+
         int b = blogService.saveBlog(blog);
 
         if(b == 0) {
