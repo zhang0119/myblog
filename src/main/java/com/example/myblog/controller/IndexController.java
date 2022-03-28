@@ -72,9 +72,9 @@ public class IndexController {
      */
     @GetMapping("/footer/blogmessage")
     public String blogMessage(Model model){
-        /*博客总数*/
+        /*文章总数*/
         Integer blogTotal = blogService.getBlogTotal();
-        /*博客的总浏览量*/
+        /*博客的访问总数*/
         Integer blogViewTotal = blogService.getBlogViewTotal();
         /*博客的总评论数*/
         Integer blogCommentTotal = blogService.getBlogCommentTotal();
@@ -87,7 +87,7 @@ public class IndexController {
         model.addAttribute("blogMessageTotal",blogMessageTotal);
 
         /*这里指返回index页面的id为“blogMessage”部分的页面*/
-        return "index :: blogMessage";
+        return "comment/comment :: blogMessage";
     }
 
     /**
