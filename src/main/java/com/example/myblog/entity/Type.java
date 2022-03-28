@@ -20,8 +20,8 @@ import java.util.List;
 public class Type {
 
     private Long id;
-
     private String name;
-    private List<Blog> blogList = new ArrayList<>();
+
+    private List<Blog> blogs = new ArrayList<>();
 
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link href="../static/images/me.jpg" th:href="@{/images/me.jpg}" rel="icon" type="image/x-ico">
+    <link href="../static/images/me.jpg" th:href="@{/images/14.jpg}" rel="icon" type="image/x-ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
     <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
     <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
@@ -20,21 +20,17 @@
 <nav class="gird-header">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
-            <h2 class="ui olive header item" style="font-family: STSong">ONESTAR</h2>
+            <h2 class="ui olive header item" style="font-family: STSong">十四</h2>
             <!--<div class="right m-item item m-mobile-hide">-->
             <a href="#" class="m-item item m-mobile-hide "><i class="home icon"></i>首页</a>
             <a href="#" class="m-item item m-mobile-hide"><i class="clone outline icon"></i>分类</a>
             <a href="#" class="m-item item m-mobile-hide"><i class="clock icon"></i>时间轴</a>
-            <a href="#" class="m-item item m-mobile-hide"><i class="music icon"></i>音乐盒</a>
-            <a href="#" class="m-item item m-mobile-hide"><i class="book icon"></i>留言板</a>
-            <a href="#" class="m-item item m-mobile-hide"><i class="pencil alternate icon"></i>友人帐</a>
-            <a href="#" class="m-item item m-mobile-hide"><i class="image icon"></i>照片墙</a>
             <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
             <!--</div>-->
             <div class="right m-item item m-mobile-hide">
-                <form name="search" action="#"  th:method="post" target="_blank">
+                <form name="search" action="#" th:action="@{/search}" th:method="post" target="_blank">
                     <div class="ui icon transparent input m-margin-tb-tiny" style="color: white">
-                        <input style="color: white" type="text" name="query" placeholder="Search....">
+                        <input style="color: white" type="text" name="query" placeholder="Search...." th:value="${query}">
                         <i onclick="document.forms['search'].submit()" class="search link icon"></i>
                     </div>
                 </form>
@@ -46,35 +42,40 @@
     </a>
 </nav>
 
+
+
 <!--顶部图片-->
 <div class="m-bg-type_outer" style="width: 100%;height: 50%">
-    <img src="../static/images/bg.jpg" alt="" class="ui m-bg image" style="width: 100%;height: 100%">
+    <!--这里的顶部照片应该和首图保持一致
+        th:src="@{${blog.firstPicture}}"
+    -->
+    <img src="../static/images/bg.jpg" th:src="@{${blog.firstPicture}}"  alt="" class="ui m-bg image" style="width: 100%;height: 100%">
     <div class="m-bg-class_cover">
         <div class="ui container" style="position: relative ;bottom: -540px;">
-            <h2 class="m-font-size-title-large" align="center">Markdown编辑</h2>
+            <h2 class="m-font-size-title-large" align="center" th:text="${blog.title}">Markdown编辑</h2>
             <div class="ui container" align="center">
                 <div class="ui horizontal link list" align="center">
                     <div class="item">
-                        <div class="ui orange basic label" style="font-size: 7px">原创</div>
+                        <div class="ui orange basic label" style="font-size: 7px" th:text="${blog.flag}">原创</div>
                     </div>
                     <div class="item">
                         <i class="user outline outline icon m-font-size-text-mini"></i>
-                        <a href="#" style="color: #ffffff;font-size: 18px">oneStar</a>
+                        <a href="#" style="color: #ffffff;font-size: 18px" th:text="${blog.username}">oneStar</a>
                     </div>
                     <div class="item">
                         <i class="calendar icon m-font-size-text-mini"></i>
-                        <span class="m-font-size-text-mini">2020-01-01</span>
+                        <span class="m-font-size-text-mini" th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2020-01-01</span>
                     </div>
                     <div class="item">
                         <i class="clone icon m-font-size-text-mini"></i>
-                        <a href="#" target="_blank" style="color: #ffffff;font-size: 16px">我的故事</a>
+                        <a href="#" target="_blank" style="color: #ffffff;font-size: 16px" th:text="${blog.typeName}">我的故事</a>
                     </div>
                     <div class="item">
-                        <i class="eye icon m-font-size-text-mini"></i> <span class="m-font-size-text-mini">2222</span>
+                        <i class="eye icon m-font-size-text-mini"></i> <span th:text="${blog.views}" class="m-font-size-text-mini">2222</span>
                     </div>
                     <div class="item">
                         <i class="comment outline icon m-font-size-text-mini"></i>
-                        <span class="m-font-size-text-mini">2222</span>
+                        <span class="m-font-size-text-mini" th:text="${blog.commentCount}">2222</span>
                     </div>
                 </div>
             </div>
@@ -87,10 +88,8 @@
     <div class="ui container m-opacity box-shadow-max">
         <!--内容-->
         <div class="ui attached padded segment">
-
-
             <!--中间主要内容部分-->
-            <div id="content" class="typo  typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large">
+            <div id="content" th:utext="${blog.content}" class="typo typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large">
 
                 <h2 id="section1">一、关于 <i class="serif">Typo.css</i></h2>
 
@@ -457,7 +456,7 @@ h5,h6{font-size:1em;}
 
 
             <!--赞赏-->
-            <div >
+            <div th:if="${blog.appreciation}">
                 <div class="ui center aligned basic segment">
                     <button id="payButton" class="ui orange basic circular button">赞赏</button>
                 </div>
@@ -483,8 +482,8 @@ h5,h6{font-size:1em;}
             <div class="ui middle aligned grid">
                 <div class="nine wide column">
                     <ui class="list">
-                        <li>作者：<span>ONESTAR</span><a href="#" target="_blank">（联系作者）</a></li>
-                        <li>发表时间：<span>2020-01-02 09:08</span></li>
+                        <li>作者：<span th:text="${blog.username}">ONESTAR</span><a href="#" target="_blank">（联系作者）</a></li>
+                        <li>发表时间：<span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}">2020-01-02 09:08</span></li>
                         <li>版权声明：自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）</li>
                         <li>转载声明：如果是转载栈主转载的文章，请附上原文链接</li>
                         <li>公众号转载：请在文末添加作者公众号二维码（公众号二维码见右边，欢迎关注）</li>
@@ -496,53 +495,55 @@ h5,h6{font-size:1em;}
                 </div>
             </div>
         </div>
-        <div  class="ui bottom attached segment">
+        <div  class="ui bottom attached segment" th:if="${blog.commentAble}">
             <!--评论区域列表-->
             <div id="comment-container"  class="ui teal segment">
-                <div>
+                <div th:fragment="commentList">
                     <div class="ui threaded comments" style="max-width: 100%;">
                         <h3 class="ui dividing header">评论</h3>
-                        <div class="comment">
+                        <!--each for循环-->
+                        <div class="comment" th:each="comment : ${comments}">
                             <a class="avatar">
-                                <img src="../static/images/avatar.png">
+                                <img src="../static/images/avatar.png" th:src="@{${comment.avatar}}">
                             </a>
                             <div class="content">
                                 <a class="author" >
-                                    <span>Matt</span>
-                                    <div class="ui mini basic teal left pointing label m-padded-mini">栈主</div>
+                                    <span th:text="${comment.username}">Matt</span>
+                                    <div class="ui mini basic teal left pointing label m-padded-mini" th:if="${comment.adminComment}">栈主</div>
                                 </a>
                                 <div class="metadata">
-                                    <span class="date">Today at 5:42PM</span>
+                                    <span class="date" th:text="${#dates.format(comment.createTime,'yyyy-MM-dd HH:mm')}">Today at 5:42PM</span>
                                 </div>
-                                <div class="text">
+                                <div class="text" th:text="${comment.content}">
                                     How artistic!
                                 </div>
                                 <div class="actions">
-                                    <a class="reply" data-commentid="1" data-commentnickname="Matt" onclick="reply(this)">回复</a>
-                                    <a class="delete" href="#" onclick="return confirm('确定要删除该评论吗？三思啊! 删了可就没了！')" th:if="${session.user}">删除</a>
+                                    <a class="reply" data-commentid="1" data-commentnickname="Matt" th:attr="data-commentid=${comment.id},data-commentusername=${comment.username}" onclick="reply(this)">回复</a>
+                                    <a class="delete" href="#" th:href="@{/comment/{param1}/{param2}/delete(param1=${comment.blogId},param2=${comment.id})}" onclick="return confirm('确定要删除该评论吗？三思啊! 删了可就没了！')" th:if="${session.user}">删除</a>
 
                                 </div>
                             </div>
                             <!--子集评论-->
-                            <div class="comments">
-                                <div class="comment">
+                            <div class="comments" th:if="${#arrays.length(comment.replyComments)}>0">
+                                <div class="comment" th:each="reply : ${comment.replyComments}">
                                     <a class="avatar">
-                                        <img src="../static/images/avatar.png">
+                                        <img src="../static/images/avatar.png" th:src="@{${reply.avatar}}">
                                     </a>
                                     <div class="content">
                                         <a class="author" >
-                                            <span>小红</span>
-                                            <div class="ui mini basic teal left pointing label m-padded-mini">栈主</div>
-                                            &nbsp;<span class="m-teal">@ 小白</span>
+                                            <span th:text="${reply.username}">小红</span>
+                                            <div class="ui mini basic teal left pointing label m-padded-mini" th:if="${reply.adminComment}">栈主</div>
+                                            &nbsp;<span class="m-teal" th:text="|@ ${reply.parentUsername}">@ 小白</span>
                                         </a>
                                         <div class="metadata">
-                                            <span class="date">Today at 5:42PM</span>
+                                            <span class="date" th:text="${#dates.format(reply.createTime,'yyyy-MM-dd HH:mm')}">Today at 5:42PM</span>
                                         </div>
-                                        <div class="text">
+                                        <div class="text" th:text="${reply.content}">
                                             How artistic!
                                         </div>
                                         <div class="actions">
-                                            <a class="reply" data-commentid="1" data-commentnickname="Matt" onclick="reply(this)">回复</a>
+                                            <a class="reply" th:attr="data-commentid=${reply.id},data-commentnickname=${reply.username}" data-commentid="1" data-commentnickname="Matt" onclick="reply(this)">回复</a>
+                                            <a class="delete" href="#" th:href="@{/comment/{param1}/{param2}/delete(param1=${reply.blogId},param2=${reply.id})}"  onclick="return confirm('确定要删除该评论吗？三思啊! 删了可就没了！')" th:if="${session.user}">删除</a>
                                         </div>
                                     </div>
                                 </div>
@@ -552,8 +553,10 @@ h5,h6{font-size:1em;}
                     </div>
                 </div>
             </div>
+
+            <!--底部访客留言区-->
             <div id="comment-form" class="ui form">
-                <input type="hidden" name="blogId">
+                <input type="hidden" name="blogId" th:value="${blog.id}">
                 <input type="hidden" name="parentComment.id" value="-1">
                 <div class="field">
                     <textarea name="content" placeholder="请输入评论信息..."></textarea>
@@ -562,13 +565,13 @@ h5,h6{font-size:1em;}
                     <div class="field m-mobile-wide m-margin-bottom-small">
                         <div class="ui left icon input">
                             <i class="user icon"></i>
-                            <input type="text" name="nickname" placeholder="姓名">
+                            <input type="text" name="username" placeholder="姓名" th:value="${session.user}!=null?${session.user.username}">
                         </div>
                     </div>
                     <div class="field m-mobile-wide m-margin-bottom-small">
                         <div class="ui left icon input">
                             <i class="mail icon"></i>
-                            <input type="text" name="email" placeholder="邮箱">
+                            <input type="text" name="email" placeholder="邮箱" th:value="${session.user}!=null?${session.user.email}">
                         </div>
                     </div>
                     <div class="field  m-margin-bottom-small m-mobile-wide">

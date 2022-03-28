@@ -1,0 +1,1116 @@
+2022-03-23 00:53:33.854  INFO 16400 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 00:53:33.859  INFO 16400 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 00:53:33.859  INFO 16400 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 00:54:35.751  INFO 33256 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 33256 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-23 00:54:35.762  INFO 33256 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-23 00:54:37.271  INFO 33256 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 1.834 seconds (JVM running for 2.405)
+2022-03-23 00:54:51.689  INFO 33256 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 12456, org.apache.catalina.session.StandardSessionFacade@639f97e9, {}]}
+2022-03-23 00:54:51.803  INFO 33256 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin
+2022-03-23 00:54:51.803  INFO 33256 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 00:54:51.822  INFO 33256 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 00:54:51.822  INFO 33256 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 00:54:51.822  INFO 33256 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 00:55:01.631  INFO 33256 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@639f97e9, {}]}
+2022-03-23 00:55:01.635  INFO 33256 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 00:55:01.635  INFO 33256 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 00:55:03.140  INFO 33256 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/friendlinks', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.FriendController.friend', args=[{}, 1]}
+2022-03-23 00:55:03.167  INFO 33256 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/friendlinks
+2022-03-23 00:55:03.167  INFO 33256 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 00:55:10.202  INFO 33256 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/friendlinks/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.FriendController.input', args=[{}]}
+2022-03-23 00:55:10.203  INFO 33256 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:/admin/friendlinks-input
+2022-03-23 00:55:10.203  INFO 33256 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 00:55:34.259  INFO 33256 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/friendlinks', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.FriendController.post', args=[FriendLink(id=null, blogName=放下依恋, blogAddress=https://www.yilinzazhi.com/2021/yl202122/2021220670.html, pictureAddress=https://picsum.photos/id/45, createTime=null), org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2022-03-23 00:55:34.265  INFO 33256 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/friendlinks
+2022-03-23 00:55:34.265  INFO 33256 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 00:55:34.272  INFO 33256 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/friendlinks', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.FriendController.friend', args=[{message=新增成功!}, 1]}
+2022-03-23 00:55:34.275  INFO 33256 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:admin/friendlinks
+2022-03-23 00:55:34.275  INFO 33256 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 00:55:38.589  INFO 33256 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/friendlinks/4/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.FriendController.editInput', args=[4, {}]}
+2022-03-23 00:55:38.591  INFO 33256 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:admin/friendlinks-input
+2022-03-23 00:55:38.591  INFO 33256 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 00:55:42.840  INFO 33256 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/friendlinks/4', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.FriendController.editPost', args=[FriendLink(id=4, blogName=放下依恋, blogAddress=https://www.yilinzazhi.com/2021/yl202122/2021220670.html, pictureAddress=https://picsum.photos/id/12, createTime=null), {}]}
+2022-03-23 00:55:42.843  INFO 33256 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/friendlinks
+2022-03-23 00:55:42.844  INFO 33256 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 00:55:42.851  INFO 33256 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/friendlinks', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.FriendController.friend', args=[{message=编辑成功!}, 1]}
+2022-03-23 00:55:42.854  INFO 33256 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:admin/friendlinks
+2022-03-23 00:55:42.854  INFO 33256 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 00:56:07.207  INFO 33256 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/friendlinks/4/delete', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.FriendController.delete', args=[4, {}]}
+2022-03-23 00:56:07.211  INFO 33256 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/friendlinks
+2022-03-23 00:56:07.212  INFO 33256 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 00:56:07.219  INFO 33256 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/friendlinks', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.FriendController.friend', args=[{message=删除成功}, 1]}
+2022-03-23 00:56:07.223  INFO 33256 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/friendlinks
+2022-03-23 00:56:07.223  INFO 33256 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 01:29:10.072  INFO 19892 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 19892 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-23 01:29:10.074  INFO 19892 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-23 01:29:11.613  INFO 19892 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 1.86 seconds (JVM running for 2.429)
+2022-03-23 01:29:26.003  INFO 19892 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 01:29:26.006  INFO 19892 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 01:29:26.006  INFO 19892 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 01:29:31.904  INFO 19892 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@6640261a, {}]}
+2022-03-23 01:29:32.017  INFO 19892 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 01:29:32.018  INFO 19892 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 01:29:33.295  INFO 19892 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2022-03-23 01:29:33.335  INFO 19892 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/blogs
+2022-03-23 01:29:33.335  INFO 19892 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 01:29:41.210  INFO 19892 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 01:29:41.216  INFO 19892 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 01:29:41.216  INFO 19892 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:14:48.726  INFO 1828 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 1828 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-23 02:14:48.729  INFO 1828 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-23 02:14:50.294  INFO 1828 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 1.884 seconds (JVM running for 2.454)
+2022-03-23 02:15:00.162  INFO 1828 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 02:15:00.165  INFO 1828 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 02:15:00.165  INFO 1828 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:15:08.828  INFO 1828 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@1f2efa7c, {}]}
+2022-03-23 02:15:08.943  INFO 1828 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 02:15:08.943  INFO 1828 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:15:10.998  INFO 1828 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 02:15:11.025  INFO 1828 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 02:15:11.026  INFO 1828 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:17:03.531  INFO 32992 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 32992 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-23 02:17:03.534  INFO 32992 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-23 02:17:05.150  INFO 32992 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 1.998 seconds (JVM running for 2.65)
+2022-03-23 02:17:09.119  INFO 32992 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 02:17:09.122  INFO 32992 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 02:17:09.122  INFO 32992 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:17:15.069  INFO 32992 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@1c6d65f5, {}]}
+2022-03-23 02:17:15.186  INFO 32992 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 02:17:15.186  INFO 32992 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:17:16.537  INFO 32992 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 02:17:16.563  INFO 32992 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 02:17:16.563  INFO 32992 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:17:18.217  INFO 32992 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.input', args=[{}]}
+2022-03-23 02:17:18.217  INFO 32992 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 02:17:18.217  INFO 32992 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:41:51.964  INFO 31076 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 31076 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-23 02:41:51.967  INFO 31076 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-23 02:41:53.487  INFO 31076 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 1.851 seconds (JVM running for 2.4)
+2022-03-23 02:42:01.167  INFO 31076 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 02:42:01.170  INFO 31076 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 02:42:01.170  INFO 31076 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:42:06.132  INFO 31076 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@5957c2ff, {}]}
+2022-03-23 02:42:06.246  INFO 31076 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 02:42:06.246  INFO 31076 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:42:07.839  INFO 31076 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 02:42:07.864  INFO 31076 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 02:42:07.864  INFO 31076 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:42:10.573  INFO 31076 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.input', args=[{}]}
+2022-03-23 02:42:10.573  INFO 31076 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 02:42:10.573  INFO 31076 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:42:10.580 ERROR 31076 --- [http-nio-8080-exec-5] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-5] Exception processing template "admin/pictures-input": Could not parse as expression: "*{id}==null?@{/admin/pictures}:@{/admin/pictures/{id}(id=*{id})" (template: "admin/pictures-input" - line 58, col 26)
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "*{id}==null?@{/admin/pictures}:@{/admin/pictures/{id}(id=*{id})" (template: "admin/pictures-input" - line 58, col 26)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-03-23 02:42:10.582 ERROR 31076 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "*{id}==null?@{/admin/pictures}:@{/admin/pictures/{id}(id=*{id})" (template: "admin/pictures-input" - line 58, col 26)] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "*{id}==null?@{/admin/pictures}:@{/admin/pictures/{id}(id=*{id})" (template: "admin/pictures-input" - line 58, col 26)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-03-23 02:44:15.621  INFO 29388 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 29388 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-23 02:44:15.624  INFO 29388 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-23 02:44:17.180  INFO 29388 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 1.879 seconds (JVM running for 2.581)
+2022-03-23 02:44:19.666  INFO 29388 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 02:44:19.669  INFO 29388 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 02:44:19.669  INFO 29388 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:44:24.213  INFO 29388 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@11d80b0f, {}]}
+2022-03-23 02:44:24.233  INFO 29388 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@11d80b0f, {}]}
+2022-03-23 02:44:24.331  INFO 29388 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 02:44:24.331  INFO 29388 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 02:44:24.331  INFO 29388 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:44:24.331  INFO 29388 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:44:26.072  INFO 29388 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 02:44:26.097  INFO 29388 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 02:44:26.097  INFO 29388 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:44:28.061  INFO 29388 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.input', args=[{}]}
+2022-03-23 02:44:28.061  INFO 29388 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 02:44:28.061  INFO 29388 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:44:28.067 ERROR 29388 --- [http-nio-8080-exec-4] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-4] Exception processing template "admin/pictures-input": Could not parse as expression: "*{id}==null?@{/admin/pictures}:@{/admin/pictures/{id}(id=*{id})" (template: "admin/pictures-input" - line 58, col 26)
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "*{id}==null?@{/admin/pictures}:@{/admin/pictures/{id}(id=*{id})" (template: "admin/pictures-input" - line 58, col 26)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-03-23 02:44:28.069 ERROR 29388 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "*{id}==null?@{/admin/pictures}:@{/admin/pictures/{id}(id=*{id})" (template: "admin/pictures-input" - line 58, col 26)] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "*{id}==null?@{/admin/pictures}:@{/admin/pictures/{id}(id=*{id})" (template: "admin/pictures-input" - line 58, col 26)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-03-23 02:46:23.007  INFO 32548 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 32548 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-23 02:46:23.009  INFO 32548 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-23 02:46:24.578  INFO 32548 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 1.888 seconds (JVM running for 2.553)
+2022-03-23 02:46:26.981  INFO 32548 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 02:46:26.984  INFO 32548 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 02:46:26.985  INFO 32548 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:46:31.466  INFO 32548 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@2955f953, {}]}
+2022-03-23 02:46:31.581  INFO 32548 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 02:46:31.581  INFO 32548 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:46:33.060  INFO 32548 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 02:46:33.086  INFO 32548 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 02:46:33.086  INFO 32548 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:46:34.459  INFO 32548 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.input', args=[{}]}
+2022-03-23 02:46:34.459  INFO 32548 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 02:46:34.460  INFO 32548 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:47:59.901  INFO 32548 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.post', args=[Picture(id=null, pictureName=财务自由，了解一下, pictureTime=null, pictureAddress=null, pictureDescription=null), org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2022-03-23 02:47:59.907  INFO 32548 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/pictures
+2022-03-23 02:47:59.907  INFO 32548 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:47:59.924  INFO 32548 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{message=新增成功}, 1]}
+2022-03-23 02:47:59.929  INFO 32548 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 02:47:59.930  INFO 32548 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:50:24.915  INFO 30180 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 30180 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-23 02:50:24.918  INFO 30180 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-23 02:50:26.656  INFO 30180 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.137 seconds (JVM running for 2.949)
+2022-03-23 02:50:30.523  INFO 30180 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 02:50:30.527  INFO 30180 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 02:50:30.527  INFO 30180 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:50:35.245  INFO 30180 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@76bdd014, {}]}
+2022-03-23 02:50:35.368  INFO 30180 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 02:50:35.368  INFO 30180 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:50:36.555  INFO 30180 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 02:50:38.810  INFO 30180 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 02:50:38.810  INFO 30180 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:50:41.419  INFO 30180 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.input', args=[{}]}
+2022-03-23 02:50:41.420  INFO 30180 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 02:50:41.420  INFO 30180 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:51:27.563  INFO 30180 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.post', args=[Picture(id=null, pictureName=草木情事, pictureTime=2022 3.23 2:23:00 池州, pictureAddress=https://www.yilinzazhi.com/2018_23/yili20182310.html, pictureDescription=好文1), org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2022-03-23 02:51:27.607  INFO 30180 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:51:27.610 ERROR 30180 --- [http-nio-8080-exec-9] c.e.m.hander.ControllerExceptionHandler  : Request URL: http://localhost:8080/admin/pictures,Exception: {}
+
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '2022 3.23 2:23:00 池州' for column 'picture_time' at row 1
+### The error may exist in file [D:\idea_projects\myblog\target\classes\mapper\PictureMapper.xml]
+### The error may involve com.example.myblog.dao.PictureDao.savePicture-Inline
+### The error occurred while setting parameters
+### SQL: insert into         t_picture(picture_address,picture_description,picture_name,picture_time)         values(?,?,?,?);
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '2022 3.23 2:23:00 池州' for column 'picture_time' at row 1
+; Data truncation: Incorrect datetime value: '2022 3.23 2:23:00 池州' for column 'picture_time' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '2022 3.23 2:23:00 池州' for column 'picture_time' at row 1
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:104)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at com.sun.proxy.$Proxy75.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy84.savePicture(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy85.savePicture(Unknown Source)
+	at com.example.myblog.service.impl.PictureServiceImpl.savePicture(PictureServiceImpl.java:29)
+	at com.example.myblog.controller.admin.PictureController.post(PictureController.java:70)
+	at com.example.myblog.controller.admin.PictureController$$FastClassBySpringCGLIB$$f3524dd8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.example.myblog.controller.admin.PictureController$$EnhancerBySpringCGLIB$$98fa84c0.post(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '2022 3.23 2:23:00 池州' for column 'picture_time' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2495)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1903)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1242)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy107.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 88 common frames omitted
+
+2022-03-23 02:52:03.506  INFO 30180 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.post', args=[Picture(id=null, pictureName=草木情事, pictureTime=2022 3.23 2:23:00, pictureAddress=https://www.yilinzazhi.com/2018_23/yili20182310.html, pictureDescription=好文1), org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2022-03-23 02:52:03.508  INFO 30180 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 02:52:03.509 ERROR 30180 --- [http-nio-8080-exec-8] c.e.m.hander.ControllerExceptionHandler  : Request URL: http://localhost:8080/admin/pictures,Exception: {}
+
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '2022 3.23 2:23:00' for column 'picture_time' at row 1
+### The error may exist in file [D:\idea_projects\myblog\target\classes\mapper\PictureMapper.xml]
+### The error may involve com.example.myblog.dao.PictureDao.savePicture-Inline
+### The error occurred while setting parameters
+### SQL: insert into         t_picture(picture_address,picture_description,picture_name,picture_time)         values(?,?,?,?);
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '2022 3.23 2:23:00' for column 'picture_time' at row 1
+; Data truncation: Incorrect datetime value: '2022 3.23 2:23:00' for column 'picture_time' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '2022 3.23 2:23:00' for column 'picture_time' at row 1
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:104)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at com.sun.proxy.$Proxy75.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy84.savePicture(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy85.savePicture(Unknown Source)
+	at com.example.myblog.service.impl.PictureServiceImpl.savePicture(PictureServiceImpl.java:29)
+	at com.example.myblog.controller.admin.PictureController.post(PictureController.java:70)
+	at com.example.myblog.controller.admin.PictureController$$FastClassBySpringCGLIB$$f3524dd8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.example.myblog.controller.admin.PictureController$$EnhancerBySpringCGLIB$$98fa84c0.post(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '2022 3.23 2:23:00' for column 'picture_time' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2495)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1903)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1242)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy107.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 88 common frames omitted
+
+2022-03-23 02:52:19.804  INFO 30180 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 02:52:21.960  INFO 30180 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 02:52:21.960  INFO 30180 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:10:33.910  INFO 18516 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 18516 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-23 03:10:33.913  INFO 18516 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-23 03:10:36.309  INFO 18516 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.009 seconds (JVM running for 4.263)
+2022-03-23 03:10:39.678  INFO 18516 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 03:10:39.683  INFO 18516 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 03:10:39.683  INFO 18516 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:10:44.453  INFO 18516 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@233bfd77, {}]}
+2022-03-23 03:10:44.602  INFO 18516 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 03:10:44.602  INFO 18516 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:10:46.112  INFO 18516 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 03:10:48.305  INFO 18516 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 03:10:48.306  INFO 18516 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:10:51.373  INFO 18516 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.input', args=[{}]}
+2022-03-23 03:10:51.373  INFO 18516 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 03:10:51.373  INFO 18516 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:11:21.161  INFO 18516 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.post', args=[Picture(id=null, pictureName=111, pictureTime=2022 3.23 3:00:00, pictureAddress=111, pictureDescription=111), org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2022-03-23 03:11:21.203  INFO 18516 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:11:21.207 ERROR 18516 --- [http-nio-8080-exec-6] c.e.m.hander.ControllerExceptionHandler  : Request URL: http://localhost:8080/admin/pictures,Exception: {}
+
+org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '2022 3.23 3:00:00' for column 'picture_time' at row 1
+### The error may exist in file [D:\idea_projects\myblog\target\classes\mapper\PictureMapper.xml]
+### The error may involve com.example.myblog.dao.PictureDao.savePicture-Inline
+### The error occurred while setting parameters
+### SQL: insert into         t_picture(picture_address,picture_description,picture_name,picture_time)         values(?,?,?,?);
+### Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '2022 3.23 3:00:00' for column 'picture_time' at row 1
+; Data truncation: Incorrect datetime value: '2022 3.23 3:00:00' for column 'picture_time' at row 1; nested exception is com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '2022 3.23 3:00:00' for column 'picture_time' at row 1
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:104)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at com.sun.proxy.$Proxy75.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy84.savePicture(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy85.savePicture(Unknown Source)
+	at com.example.myblog.service.impl.PictureServiceImpl.savePicture(PictureServiceImpl.java:29)
+	at com.example.myblog.controller.admin.PictureController.post(PictureController.java:70)
+	at com.example.myblog.controller.admin.PictureController$$FastClassBySpringCGLIB$$f3524dd8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.example.myblog.controller.admin.PictureController$$EnhancerBySpringCGLIB$$e0daf1a4.post(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect datetime value: '2022 3.23 3:00:00' for column 'picture_time' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2495)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1903)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1242)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy107.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 88 common frames omitted
+
+2022-03-23 03:12:06.496  INFO 18516 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.post', args=[Picture(id=null, pictureName=111, pictureTime=2022-3-23 3:00:00, pictureAddress=111, pictureDescription=111), org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2022-03-23 03:12:06.499  INFO 18516 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/pictures
+2022-03-23 03:12:06.499  INFO 18516 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:12:06.517  INFO 18516 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{message=新增成功}, 1]}
+2022-03-23 03:12:09.427  INFO 18516 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 03:12:09.427  INFO 18516 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:13:15.885  INFO 18516 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.input', args=[{}]}
+2022-03-23 03:13:15.886  INFO 18516 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 03:13:15.886  INFO 18516 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:15:37.743  INFO 31160 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 31160 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-23 03:15:37.747  INFO 31160 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-23 03:15:40.054  INFO 31160 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.949 seconds (JVM running for 4.199)
+2022-03-23 03:15:42.191  INFO 31160 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 03:15:42.195  INFO 31160 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 03:15:42.195  INFO 31160 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:15:51.273  INFO 31160 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@5675c866, {}]}
+2022-03-23 03:15:51.420  INFO 31160 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 03:15:51.421  INFO 31160 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:15:52.628  INFO 31160 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 03:15:54.434  INFO 31160 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 03:15:54.434  INFO 31160 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:16:05.597  INFO 31160 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.input', args=[{}]}
+2022-03-23 03:16:05.597  INFO 31160 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 03:16:05.597  INFO 31160 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:17:22.682  INFO 7948 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 7948 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-23 03:17:22.684  INFO 7948 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-23 03:17:24.433  INFO 7948 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.132 seconds (JVM running for 2.97)
+2022-03-23 03:17:28.177  INFO 7948 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 03:17:28.180  INFO 7948 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 03:17:28.181  INFO 7948 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:17:48.550  INFO 7948 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@3359cf8e, {}]}
+2022-03-23 03:17:48.675  INFO 7948 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 03:17:48.676  INFO 7948 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:17:50.241  INFO 7948 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 03:17:52.062  INFO 7948 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 03:17:52.063  INFO 7948 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:17:54.583  INFO 7948 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.input', args=[{}]}
+2022-03-23 03:17:54.583  INFO 7948 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 03:17:54.583  INFO 7948 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:17:58.601  INFO 7948 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/logout', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.logout', args=[org.apache.catalina.session.StandardSessionFacade@3359cf8e]}
+2022-03-23 03:17:58.602  INFO 7948 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin
+2022-03-23 03:17:58.602  INFO 7948 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:17:58.614  INFO 7948 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 03:17:58.614  INFO 7948 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 03:17:58.614  INFO 7948 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:18:03.903  INFO 7948 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@3359cf8e, {}]}
+2022-03-23 03:18:03.905  INFO 7948 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 03:18:03.905  INFO 7948 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:18:05.233  INFO 7948 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 03:18:23.961  INFO 7948 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 03:18:23.961  INFO 7948 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:18:32.465  INFO 7948 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.input', args=[{}]}
+2022-03-23 03:18:32.466  INFO 7948 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 03:18:32.466  INFO 7948 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:19:01.222  INFO 7948 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.post', args=[Picture(id=null, pictureName=222, pictureTime=2022-3-23 3:00:00 , pictureAddress=222, pictureDescription=222), org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2022-03-23 03:19:01.226  INFO 7948 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/pictures
+2022-03-23 03:19:01.227  INFO 7948 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:19:01.238  INFO 7948 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{message=新增成功}, 1]}
+2022-03-23 03:19:03.138  INFO 7948 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 03:19:03.138  INFO 7948 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:19:56.689 ERROR 7948 --- [http-nio-8080-exec-4] c.e.m.hander.ControllerExceptionHandler  : Request URL: http://localhost:8080/admin/pictures/id,Exception: {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:253)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:442)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1261)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1043)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-03-23 03:22:16.139  INFO 22776 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 22776 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-23 03:22:16.142  INFO 22776 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-23 03:22:17.699  INFO 22776 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 1.953 seconds (JVM running for 2.738)
+2022-03-23 03:22:22.905  INFO 22776 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 03:22:22.908  INFO 22776 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 03:22:22.908  INFO 22776 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:22:30.749  INFO 22776 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@48d32b54, {}]}
+2022-03-23 03:22:30.870  INFO 22776 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 03:22:30.870  INFO 22776 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:22:32.083  INFO 22776 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 03:22:32.111  INFO 22776 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 03:22:32.111  INFO 22776 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:22:33.853  INFO 22776 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/3/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.editInput', args=[3, {}]}
+2022-03-23 03:22:33.855  INFO 22776 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 03:22:33.855  INFO 22776 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:22:46.932  INFO 22776 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/3/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.editInput', args=[3, {}]}
+2022-03-23 03:22:46.934  INFO 22776 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 03:22:46.934  INFO 22776 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:22:50.061  INFO 22776 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/3', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.editPost', args=[Picture(id=3, pictureName=222, pictureTime=2022-03-23 03:00:00, pictureAddress=222, pictureDescription=222), {}]}
+2022-03-23 03:22:50.063  INFO 22776 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/pictures
+2022-03-23 03:22:50.064  INFO 22776 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:22:50.077  INFO 22776 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{message=编辑成功}, 1]}
+2022-03-23 03:22:50.080  INFO 22776 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 03:22:50.080  INFO 22776 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:22:55.204  INFO 22776 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/3/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.editInput', args=[3, {}]}
+2022-03-23 03:22:55.206  INFO 22776 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 03:22:55.206  INFO 22776 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:22:58.465  INFO 22776 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/3', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.editPost', args=[Picture(id=3, pictureName=333, pictureTime=2022-03-23 03:00:00.0, pictureAddress=222, pictureDescription=222), {}]}
+2022-03-23 03:22:58.468  INFO 22776 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/pictures
+2022-03-23 03:22:58.469  INFO 22776 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:22:58.474  INFO 22776 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{message=编辑成功}, 1]}
+2022-03-23 03:22:58.477  INFO 22776 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 03:22:58.478  INFO 22776 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:23:10.861 ERROR 22776 --- [http-nio-8080-exec-2] c.e.m.hander.ControllerExceptionHandler  : Request URL: http://localhost:8080/admin/pictures/id/delete,Exception: {}
+
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "id"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: "id"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:589)
+	at java.lang.Long.valueOf(Long.java:803)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214)
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115)
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429)
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:700)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125)
+	... 47 common frames omitted
+
+2022-03-23 03:23:36.511  INFO 31820 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 31820 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-23 03:23:36.515  INFO 31820 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-23 03:23:38.346  INFO 31820 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.366 seconds (JVM running for 3.672)
+2022-03-23 03:23:39.925  INFO 31820 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 03:23:39.929  INFO 31820 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 03:23:39.929  INFO 31820 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:23:44.649  INFO 31820 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@1aadf8f6, {}]}
+2022-03-23 03:23:44.784  INFO 31820 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 03:23:44.784  INFO 31820 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:25:31.510  INFO 31820 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 03:25:31.510  INFO 31820 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 03:25:31.510  INFO 31820 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:25:37.975  INFO 31820 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@1aadf8f6, {}]}
+2022-03-23 03:25:37.979  INFO 31820 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 03:25:37.980  INFO 31820 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:25:39.625  INFO 31820 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 03:25:39.654  INFO 31820 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 03:25:39.654  INFO 31820 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:25:44.776  INFO 31820 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/3/delete', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.delete', args=[3, {}]}
+2022-03-23 03:25:44.788  INFO 31820 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/pictures
+2022-03-23 03:25:44.789  INFO 31820 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:25:44.804  INFO 31820 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{message=删除成功}, 1]}
+2022-03-23 03:25:44.806  INFO 31820 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 03:25:44.806  INFO 31820 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:25:48.247  INFO 31820 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/1/delete', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.delete', args=[1, {}]}
+2022-03-23 03:25:48.249  INFO 31820 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/pictures
+2022-03-23 03:25:48.250  INFO 31820 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:25:48.255  INFO 31820 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{message=删除成功}, 1]}
+2022-03-23 03:25:48.257  INFO 31820 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 03:25:48.257  INFO 31820 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:25:52.164  INFO 31820 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.input', args=[{}]}
+2022-03-23 03:25:52.165  INFO 31820 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 03:25:52.165  INFO 31820 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:25:55.924  INFO 31820 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/2/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.editInput', args=[2, {}]}
+2022-03-23 03:25:55.926  INFO 31820 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 03:25:55.927  INFO 31820 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:25:59.866  INFO 31820 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 03:25:59.866  INFO 31820 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 03:25:59.867  INFO 31820 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:26:05.018  INFO 31820 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@1aadf8f6, {}]}
+2022-03-23 03:26:05.021  INFO 31820 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 03:26:05.021  INFO 31820 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:26:06.457  INFO 31820 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 03:26:06.460  INFO 31820 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 03:26:06.461  INFO 31820 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:27:03.757  INFO 28212 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 28212 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-23 03:27:03.760  INFO 28212 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-23 03:27:05.542  INFO 28212 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.12 seconds (JVM running for 2.77)
+2022-03-23 03:27:12.600  INFO 28212 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 03:27:12.603  INFO 28212 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 03:27:12.604  INFO 28212 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:27:18.653  INFO 28212 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@5a11933, {}]}
+2022-03-23 03:27:18.769  INFO 28212 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 03:27:18.769  INFO 28212 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:27:20.453  INFO 28212 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 03:27:20.480  INFO 28212 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 03:27:20.480  INFO 28212 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:27:22.061  INFO 28212 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.input', args=[{}]}
+2022-03-23 03:27:22.061  INFO 28212 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 03:27:22.061  INFO 28212 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:27:24.045  INFO 28212 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 03:27:24.048  INFO 28212 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 03:27:24.048  INFO 28212 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 03:27:26.109  INFO 28212 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.input', args=[{}]}
+2022-03-23 03:27:26.109  INFO 28212 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:admin/pictures-input
+2022-03-23 03:27:26.109  INFO 28212 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 19:55:55.698  INFO 17472 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 17472 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-23 19:55:55.701  INFO 17472 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-23 19:55:57.319  INFO 17472 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 1.956 seconds (JVM running for 2.531)
+2022-03-23 19:56:02.523  INFO 17472 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-23 19:56:02.526  INFO 17472 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-23 19:56:02.526  INFO 17472 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 19:56:08.049  INFO 17472 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@22123b21, {}]}
+2022-03-23 19:56:08.163  INFO 17472 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-23 19:56:08.163  INFO 17472 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-23 19:56:11.742  INFO 17472 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/pictures;jsessionid=8E60060899884BEC4924B5CCDE80C68E', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.PictureController.pictures', args=[{}, 1]}
+2022-03-23 19:56:11.770  INFO 17472 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:admin/pictures
+2022-03-23 19:56:11.770  INFO 17472 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------

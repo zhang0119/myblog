@@ -21,9 +21,9 @@ import java.util.List;
 public class Comment {
 
     private Long id;
-    private String nickName;
+    private String username;
     private String email;
-    private String context;
+    private String content;
     private String avatar;
     private Date createTime;
     private Long blogId;
@@ -33,5 +33,5 @@ public class Comment {
     //回复评论
     private List<Comment> replyComments = new ArrayList<>();
     private Comment parentComment;
-    private String parentNickname;
+    private String parentUsername;
 }

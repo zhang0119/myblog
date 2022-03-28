@@ -35,7 +35,7 @@ public interface BlogDao {
     /*搜索博客管理列表*/
     List<BlogQuery> searchByTitleAndType(SearchBlog searchBlog);
 
-    /*-----------------------------------------------------------------------------*/
+    /*-----------博客首页的信息------------------------------------------------------------------*/
 
     /*查询首页最新博客列表信息*/
     List<FirstPageBlog> getFirstPageBlog();
@@ -58,5 +58,17 @@ public interface BlogDao {
     /*统计留言总数*/
     Integer getBlogMessageTotal();
 
+    /*-----------博客详情页的接口方法------------------------------------------------------------*/
+    /*查询博客详情,通过blogId找到整个博客信息*/
+    DetailedBlog getDetailedBlog(Long id);
 
+    /*文章访问更新,更新浏览量+1*/
+    int updateViews(Long id);
+
+    /*根据博客id查询出评论数量*/
+    int getCommentCountById(Long id);
+
+    /*-------分类页面下显示的内容------------------------------------------------------------------*/
+    /*根据typeId查询博客列表，显示在分类页面*/
+    List<FirstPageBlog> getByTypeId(Long typeId);
 }

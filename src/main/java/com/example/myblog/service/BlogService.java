@@ -32,7 +32,7 @@ public interface BlogService {
     /*搜索博客管理列表*/
     List<BlogQuery> getBlogBySearch(SearchBlog searchBlog);
 
-    /*-------------------------------------------------------------*/
+    /*-----------博客首页的信息--------------------------------------------------*/
     /*查询首页最新博客列表信息*/
     List<FirstPageBlog> getAllFirstPageBlog();
 
@@ -53,4 +53,11 @@ public interface BlogService {
 
     /*统计留言总数*/
     Integer getBlogMessageTotal();
+
+    /*---------博客详情页的接口方法-----------------------------------------------*/
+    /*查询博客详情*/
+    DetailedBlog getDetailedBlog(Long id);
+
+    /*--------分类页面接口------------------------------------------------------------*/
+    List<FirstPageBlog> getByTypeId(Long typeId);
 }

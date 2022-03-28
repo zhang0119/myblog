@@ -1,0 +1,339 @@
+2022-03-19 14:19:34.524  INFO 6840 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 6840 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-19 14:19:34.534  INFO 6840 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-19 14:19:36.839  INFO 6840 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.272 seconds (JVM running for 4.809)
+2022-03-19 14:20:03.576  INFO 6840 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-19 14:20:03.584  INFO 6840 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-19 14:20:03.584  INFO 6840 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:20:10.984  INFO 6840 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@44f4c61b, {}]}
+2022-03-19 14:20:11.232  INFO 6840 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-19 14:20:11.232  INFO 6840 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:20:14.952  INFO 6840 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types;jsessionid=CC4F943F92A1016E811B776AA2D6B21B', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{}, 1]}
+2022-03-19 14:20:15.008  INFO 6840 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:20:15.008  INFO 6840 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:20:23.829  INFO 6840 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.input', args=[{}]}
+2022-03-19 14:20:23.829  INFO 6840 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:20:23.829  INFO 6840 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:20:33.889  INFO 6840 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.input', args=[{}]}
+2022-03-19 14:20:33.889  INFO 6840 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:20:33.897  INFO 6840 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:20:39.296  INFO 6840 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.post', args=[Type(id=null, name=随便, blogList=[]), {}]}
+2022-03-19 14:20:39.304  INFO 6840 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:20:39.304  INFO 6840 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:20:39.328  INFO 6840 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=新增成功}, 1]}
+2022-03-19 14:20:39.336  INFO 6840 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:20:39.336  INFO 6840 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:20:44.264  INFO 6840 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.input', args=[{}]}
+2022-03-19 14:20:44.264  INFO 6840 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:20:44.264  INFO 6840 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:20:53.009  INFO 6840 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.post', args=[Type(id=null, name=随便, blogList=[]), {}]}
+2022-03-19 14:20:53.017  INFO 6840 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types/input
+2022-03-19 14:20:53.017  INFO 6840 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:20:53.025  INFO 6840 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.input', args=[{message=不能添加重复的分类}]}
+2022-03-19 14:20:53.025  INFO 6840 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:20:53.025  INFO 6840 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:21:20.174  INFO 15388 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 15388 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-19 14:21:20.174  INFO 15388 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-19 14:21:22.708  INFO 15388 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.089 seconds (JVM running for 3.998)
+2022-03-19 14:21:24.683  INFO 15388 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-19 14:21:24.691  INFO 15388 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-19 14:21:24.691  INFO 15388 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:21:32.873  INFO 15388 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@2ca0a672, {}]}
+2022-03-19 14:21:33.073  INFO 15388 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-19 14:21:33.073  INFO 15388 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:21:35.893  INFO 15388 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{}, 1]}
+2022-03-19 14:21:35.957  INFO 15388 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:21:35.957  INFO 15388 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:21:38.738  INFO 15388 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.input', args=[{}]}
+2022-03-19 14:21:38.738  INFO 15388 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:21:38.738  INFO 15388 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:02.522  INFO 15388 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.post', args=[Type(id=null, name=随便, blogList=[]), {}]}
+2022-03-19 14:23:02.530  INFO 15388 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types/input
+2022-03-19 14:23:02.530  INFO 15388 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:02.594  INFO 15388 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.input', args=[{message=不能添加重复的分类}]}
+2022-03-19 14:23:02.594  INFO 15388 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:23:02.602  INFO 15388 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:10.651  INFO 15388 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.post', args=[Type(id=null, name=随便, blogList=[]), {}]}
+2022-03-19 14:23:10.659  INFO 15388 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types/input
+2022-03-19 14:23:10.659  INFO 15388 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:10.669  INFO 15388 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.input', args=[{message=不能添加重复的分类}]}
+2022-03-19 14:23:10.669  INFO 15388 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:23:10.669  INFO 15388 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:18.168  INFO 15388 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{}, 1]}
+2022-03-19 14:23:18.176  INFO 15388 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:23:18.176  INFO 15388 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:23.600  INFO 15388 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/5/delete', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.delete', args=[5, {}]}
+2022-03-19 14:23:23.610  INFO 15388 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:23:23.610  INFO 15388 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:23.626  INFO 15388 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=删除成功}, 1]}
+2022-03-19 14:23:23.626  INFO 15388 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:23:23.626  INFO 15388 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:26.723  INFO 15388 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/4/delete', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.delete', args=[4, {}]}
+2022-03-19 14:23:26.736  INFO 15388 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:23:26.736  INFO 15388 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:26.744  INFO 15388 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=删除成功}, 1]}
+2022-03-19 14:23:26.752  INFO 15388 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:23:26.752  INFO 15388 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:29.295  INFO 15388 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/3/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.editInput', args=[3, {}]}
+2022-03-19 14:23:29.295  INFO 15388 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:23:29.295  INFO 15388 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:39.027  INFO 15388 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.post', args=[Type(id=null, name=翻, blogList=[]), {}]}
+2022-03-19 14:23:39.035  INFO 15388 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:23:39.035  INFO 15388 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:39.043  INFO 15388 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=新增成功}, 1]}
+2022-03-19 14:23:39.051  INFO 15388 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:23:39.051  INFO 15388 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:48.451  INFO 15388 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/6/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.editInput', args=[6, {}]}
+2022-03-19 14:23:48.459  INFO 15388 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:23:48.459  INFO 15388 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:52.973  INFO 15388 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.post', args=[Type(id=null, name=翻译, blogList=[]), {}]}
+2022-03-19 14:23:52.973  INFO 15388 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types/input
+2022-03-19 14:23:52.973  INFO 15388 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:52.981  INFO 15388 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.input', args=[{message=不能添加重复的分类}]}
+2022-03-19 14:23:52.981  INFO 15388 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:23:52.981  INFO 15388 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:59.805  INFO 15388 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.post', args=[Type(id=null, name=翻译的, blogList=[]), {}]}
+2022-03-19 14:23:59.813  INFO 15388 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:23:59.813  INFO 15388 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:23:59.829  INFO 15388 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=新增成功}, 1]}
+2022-03-19 14:23:59.829  INFO 15388 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:23:59.829  INFO 15388 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:34:27.486  INFO 684 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 684 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-19 14:34:27.496  INFO 684 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-19 14:34:29.839  INFO 684 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.005 seconds (JVM running for 4.099)
+2022-03-19 14:34:40.428  INFO 684 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-19 14:34:40.428  INFO 684 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-19 14:34:40.436  INFO 684 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:34:48.199  INFO 684 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@322dc67d, {}]}
+2022-03-19 14:34:48.407  INFO 684 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-19 14:34:48.407  INFO 684 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:34:51.350  INFO 684 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{}, 1]}
+2022-03-19 14:34:51.413  INFO 684 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:34:51.413  INFO 684 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:34:55.821  INFO 684 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.input', args=[{}]}
+2022-03-19 14:34:55.821  INFO 684 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:34:55.821  INFO 684 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:35:01.934  INFO 684 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.post', args=[Type(id=null, name=第一, blogList=[]), {}]}
+2022-03-19 14:35:01.951  INFO 684 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:35:01.951  INFO 684 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:35:01.974  INFO 684 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=新增成功}, 1]}
+2022-03-19 14:35:01.982  INFO 684 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:35:01.982  INFO 684 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:35:05.756  INFO 684 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/8/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.editInput', args=[8, {}]}
+2022-03-19 14:35:05.764  INFO 684 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:35:05.764  INFO 684 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:35:10.279  INFO 684 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/8', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.editPost', args=[Type(id=8, name=第而, blogList=[]), {}]}
+2022-03-19 14:35:10.287  INFO 684 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:35:10.287  INFO 684 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:35:10.295  INFO 684 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=编辑成功}, 1]}
+2022-03-19 14:35:10.303  INFO 684 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:35:10.303  INFO 684 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:35:14.749  INFO 684 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/8/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.editInput', args=[8, {}]}
+2022-03-19 14:35:14.749  INFO 684 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:35:14.749  INFO 684 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:35:18.711  INFO 684 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/8', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.editPost', args=[Type(id=8, name=第二, blogList=[]), {}]}
+2022-03-19 14:35:18.719  INFO 684 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:35:18.719  INFO 684 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:35:18.727  INFO 684 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=编辑成功}, 1]}
+2022-03-19 14:35:18.735  INFO 684 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:35:18.735  INFO 684 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:35:21.885  INFO 684 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/8/delete', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.delete', args=[8, {}]}
+2022-03-19 14:35:21.901  INFO 684 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:35:21.901  INFO 684 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:35:21.909  INFO 684 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=删除成功}, 1]}
+2022-03-19 14:35:21.917  INFO 684 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:35:21.917  INFO 684 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:36:15.218  INFO 684 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.input', args=[{}]}
+2022-03-19 14:36:15.218  INFO 684 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:36:15.218  INFO 684 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:36:23.620  INFO 684 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.post', args=[Type(id=null, name=第三, blogList=[]), {}]}
+2022-03-19 14:36:23.644  INFO 684 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:36:23.644  INFO 684 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:36:23.652  INFO 684 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=新增成功}, 1]}
+2022-03-19 14:36:23.660  INFO 684 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:36:23.660  INFO 684 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:36:26.817  INFO 684 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/9/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.editInput', args=[9, {}]}
+2022-03-19 14:36:26.817  INFO 684 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:36:26.817  INFO 684 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:36:36.216  INFO 684 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/9', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.editPost', args=[Type(id=9, name=第三, blogList=[]), {}]}
+2022-03-19 14:36:36.224  INFO 684 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types/input
+2022-03-19 14:36:36.224  INFO 684 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:36:36.232  INFO 684 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.input', args=[{message=不能添加重复的分类}]}
+2022-03-19 14:36:36.232  INFO 684 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:36:36.232  INFO 684 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:36:46.490  INFO 684 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.post', args=[Type(id=null, name=第四, blogList=[]), {}]}
+2022-03-19 14:36:46.499  INFO 684 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:36:46.499  INFO 684 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:36:46.506  INFO 684 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=新增成功}, 1]}
+2022-03-19 14:36:46.506  INFO 684 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:36:46.506  INFO 684 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:39:27.586  INFO 9608 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 9608 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-19 14:39:27.586  INFO 9608 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-19 14:39:30.217  INFO 9608 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.156 seconds (JVM running for 4.151)
+2022-03-19 14:40:20.322  INFO 1400 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 1400 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-19 14:40:20.338  INFO 1400 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-19 14:40:22.619  INFO 1400 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.864 seconds (JVM running for 3.886)
+2022-03-19 14:40:28.314  INFO 1400 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-19 14:40:28.322  INFO 1400 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-19 14:40:28.322  INFO 1400 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:40:38.338  INFO 1400 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@7e2557dc, {}]}
+2022-03-19 14:40:38.538  INFO 1400 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-19 14:40:38.538  INFO 1400 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:40:40.492  INFO 1400 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{}, 1]}
+2022-03-19 14:40:40.555  INFO 1400 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:40:40.555  INFO 1400 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:41:01.600  INFO 1400 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.input', args=[{}]}
+2022-03-19 14:41:01.600  INFO 1400 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:41:01.600  INFO 1400 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:41:09.368  INFO 1400 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.post', args=[Type(id=null, name=思维, blogList=[]), {}]}
+2022-03-19 14:41:09.376  INFO 1400 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:41:09.376  INFO 1400 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:41:09.408  INFO 1400 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=新增成功}, 1]}
+2022-03-19 14:41:09.416  INFO 1400 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:41:09.416  INFO 1400 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:45:00.161  INFO 1400 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/11/delete', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.delete', args=[11, {}]}
+2022-03-19 14:45:00.184  INFO 1400 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:45:00.184  INFO 1400 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:45:00.192  INFO 1400 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=删除成功}, 1]}
+2022-03-19 14:45:00.200  INFO 1400 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:45:00.200  INFO 1400 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:45:04.741  INFO 1400 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/10/delete', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.delete', args=[10, {}]}
+2022-03-19 14:45:04.749  INFO 1400 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:45:04.749  INFO 1400 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:45:04.757  INFO 1400 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=删除成功}, 1]}
+2022-03-19 14:45:04.765  INFO 1400 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:45:04.765  INFO 1400 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:45:09.418  INFO 1400 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/9/delete', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.delete', args=[9, {}]}
+2022-03-19 14:45:09.427  INFO 1400 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:45:09.427  INFO 1400 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:45:09.434  INFO 1400 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=删除成功}, 1]}
+2022-03-19 14:45:09.442  INFO 1400 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:45:09.442  INFO 1400 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:45:11.189  INFO 1400 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/7/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.editInput', args=[7, {}]}
+2022-03-19 14:45:11.189  INFO 1400 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:45:11.189  INFO 1400 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:45:18.261  INFO 1400 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/7', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.editPost', args=[Type(id=7, name=里面, blogList=[]), {}]}
+2022-03-19 14:45:18.269  INFO 1400 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:45:18.269  INFO 1400 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:45:18.285  INFO 1400 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=编辑成功}, 1]}
+2022-03-19 14:45:18.285  INFO 1400 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:45:18.285  INFO 1400 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:45:22.123  INFO 1400 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/7/delete', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.delete', args=[7, {}]}
+2022-03-19 14:45:22.136  INFO 1400 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:45:22.136  INFO 1400 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:45:22.144  INFO 1400 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=删除成功}, 1]}
+2022-03-19 14:45:22.152  INFO 1400 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:45:22.152  INFO 1400 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:45:25.072  INFO 1400 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/6/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.editInput', args=[6, {}]}
+2022-03-19 14:45:25.080  INFO 1400 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-19 14:45:25.080  INFO 1400 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:45:31.262  INFO 1400 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/6', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.editPost', args=[Type(id=6, name=很好吃, blogList=[]), {}]}
+2022-03-19 14:45:31.270  INFO 1400 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:45:31.270  INFO 1400 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:45:31.286  INFO 1400 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=编辑成功}, 1]}
+2022-03-19 14:45:31.286  INFO 1400 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:45:31.286  INFO 1400 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:45:35.911  INFO 1400 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/6/delete', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.delete', args=[6, {}]}
+2022-03-19 14:45:35.930  INFO 1400 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-19 14:45:35.930  INFO 1400 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:45:35.938  INFO 1400 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=删除成功}, 1]}
+2022-03-19 14:45:35.946  INFO 1400 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-19 14:45:35.946  INFO 1400 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:49:24.925  INFO 15664 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 15664 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-19 14:49:24.940  INFO 15664 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-19 14:49:27.217  INFO 15664 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.795 seconds (JVM running for 3.728)
+2022-03-19 14:49:34.839  INFO 15664 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-19 14:49:34.847  INFO 15664 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-19 14:49:34.847  INFO 15664 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:49:43.342  INFO 15664 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 12345, org.apache.catalina.session.StandardSessionFacade@3360fc66, {}]}
+2022-03-19 14:49:43.542  INFO 15664 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin
+2022-03-19 14:49:43.542  INFO 15664 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:49:43.574  INFO 15664 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-19 14:49:43.574  INFO 15664 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-19 14:49:43.574  INFO 15664 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:50:31.577  INFO 16332 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 16332 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-19 14:50:31.577  INFO 16332 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-19 14:50:33.899  INFO 16332 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.816 seconds (JVM running for 3.746)
+2022-03-19 14:50:36.556  INFO 16332 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-19 14:50:36.564  INFO 16332 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-19 14:50:36.564  INFO 16332 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:50:47.043  INFO 16332 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@35c11181, {}]}
+2022-03-19 14:50:47.246  INFO 16332 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-19 14:50:47.246  INFO 16332 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:50:51.596  INFO 16332 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/logout', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.logout', args=[org.apache.catalina.session.StandardSessionFacade@35c11181]}
+2022-03-19 14:50:51.596  INFO 16332 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin
+2022-03-19 14:50:51.596  INFO 16332 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:50:51.612  INFO 16332 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-19 14:50:51.620  INFO 16332 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-19 14:50:51.620  INFO 16332 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:50:59.290  INFO 16332 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@35c11181, {}]}
+2022-03-19 14:50:59.298  INFO 16332 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-19 14:50:59.298  INFO 16332 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:51:02.706  INFO 16332 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/logout', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.logout', args=[org.apache.catalina.session.StandardSessionFacade@35c11181]}
+2022-03-19 14:51:02.706  INFO 16332 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin
+2022-03-19 14:51:02.706  INFO 16332 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:51:02.714  INFO 16332 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-19 14:51:02.714  INFO 16332 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-19 14:51:02.714  INFO 16332 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:51:09.109  INFO 16332 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 12345, org.apache.catalina.session.StandardSessionFacade@35c11181, {}]}
+2022-03-19 14:51:09.109  INFO 16332 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin
+2022-03-19 14:51:09.109  INFO 16332 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:51:09.125  INFO 16332 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-19 14:51:09.125  INFO 16332 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-19 14:51:09.125  INFO 16332 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:54:13.129  INFO 196 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 196 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-19 14:54:13.129  INFO 196 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-19 14:54:15.551  INFO 196 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.96 seconds (JVM running for 3.894)
+2022-03-19 14:54:21.819  INFO 196 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-19 14:54:21.827  INFO 196 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-19 14:54:21.827  INFO 196 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:54:28.466  INFO 196 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@5605e260, {}]}
+2022-03-19 14:54:28.674  INFO 196 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-19 14:54:28.674  INFO 196 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:54:31.979  INFO 196 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/logout', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.logout', args=[org.apache.catalina.session.StandardSessionFacade@5605e260]}
+2022-03-19 14:54:31.979  INFO 196 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin
+2022-03-19 14:54:31.979  INFO 196 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:54:31.995  INFO 196 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-19 14:54:31.995  INFO 196 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-19 14:54:31.995  INFO 196 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:54:37.547  INFO 196 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 12345, org.apache.catalina.session.StandardSessionFacade@5605e260, {}]}
+2022-03-19 14:54:37.555  INFO 196 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin
+2022-03-19 14:54:37.555  INFO 196 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:54:37.571  INFO 196 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-19 14:54:37.571  INFO 196 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-19 14:54:37.571  INFO 196 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:54:48.656  INFO 196 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 12345, org.apache.catalina.session.StandardSessionFacade@5605e260, {}]}
+2022-03-19 14:54:48.664  INFO 196 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin
+2022-03-19 14:54:48.664  INFO 196 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:54:48.672  INFO 196 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-19 14:54:48.672  INFO 196 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-19 14:54:48.672  INFO 196 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:56:05.107  INFO 196 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admi, falfa, org.apache.catalina.session.StandardSessionFacade@5605e260, {}]}
+2022-03-19 14:56:05.115  INFO 196 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin
+2022-03-19 14:56:05.115  INFO 196 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:56:05.123  INFO 196 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-19 14:56:05.123  INFO 196 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-19 14:56:05.123  INFO 196 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 14:56:11.233  INFO 196 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@5605e260, {}]}
+2022-03-19 14:56:11.233  INFO 196 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-19 14:56:11.233  INFO 196 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 17:00:40.294  INFO 12992 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 12992 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-19 17:00:40.298  INFO 12992 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-19 17:00:42.708  INFO 12992 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.968 seconds (JVM running for 3.981)
+2022-03-19 17:00:54.225  INFO 12992 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@1224f9e7, {}]}
+2022-03-19 17:00:54.430  INFO 12992 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-19 17:00:54.431  INFO 12992 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 17:00:56.972  INFO 12992 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-19 17:00:56.973  INFO 12992 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-19 17:00:56.973  INFO 12992 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 17:01:04.267  INFO 12992 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@1224f9e7, {}]}
+2022-03-19 17:01:04.271  INFO 12992 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-19 17:01:04.272  INFO 12992 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 17:01:10.270  INFO 12992 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2022-03-19 17:01:10.335  INFO 12992 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/blogs
+2022-03-19 17:01:10.335  INFO 12992 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 17:01:49.749  INFO 12992 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.input', args=[{}]}
+2022-03-19 17:01:49.755  INFO 12992 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/blogs-input
+2022-03-19 17:01:49.755  INFO 12992 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-19 17:02:05.066  INFO 12992 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.input', args=[{}]}
+2022-03-19 17:02:05.070  INFO 12992 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:admin/blogs-input
+2022-03-19 17:02:05.071  INFO 12992 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------

@@ -33,4 +33,8 @@ public interface TypeDao {
     /*删除分类*/
     void deletedType(Long id);
 
+    /*-----分类页面显示------------------------------------------------*/
+    /*查询所有的分类*/
+    List<Type> getAllTypeAndBlog();
+
 }

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.myblog.dao.CommentDao">
+
+    <!--
+        /*查询父级评论*/
+        根据id为“-1”和博客id查询出所有父评论（父级评论id为‘-1’）,
+        按创建时间倒序排列
+        List<Comment> findByBlogIdParentIdNull(@Param("blogId")Long blogId,@Param("blogParentId")Long blogParentId);
+    -->
+    <select id="findByBlogIdParentIdNull" resultType="comment">
+        select *
+        from t_comment c
+        where
+        c.blog_id = #{blogId} and c.parent_comment_id = #{blogParentId}
+        order by c.create_time desc
+    </select>
+
+    <!--
+        /*查询一级回复*/
+        根据父评论的id查询出一级子回复
+        List<Comment> findByBlogIdParentIdNotNull
+        (@Param("blogId")Long blogId,@Param("id")Long id);
+    -->
+    <select id="findByBlogIdParentIdNotNull" resultType="comment">
+        select *
+        from t_comment c
+        where c.blog_id = #{blogId} and c.parent_comment_id = #{id}
+        order by c.create_time desc
+    </select>
+
+    <!--
+        查询二级子评论
+        根据子回复的id循环迭代查询出所有子集回复
+            List<Comment> findByBlogIdAndReplayId
+            (@Param("blogId")Long blogId,@Param("childId")Long childId);
+    -->
+    <select id="findByBlogIdAndReplayId" resultType="comment">
+        select *
+        from t_comment c
+        where c.blog_id = #{blogId} and c.parent_comment_id = #{childId}
+        order by c.create_time desc
+    </select>
+
+    <!--
+        /*添加一个评论*/
+        int saveComment(Comment comment);
+    -->
+    <insert id="saveComment" parameterType="comment">
+        insert into t_comment('nickname','email','content','avatar','create_time','blog_id','parent_comment_id','admin_comment')
+        values(#{nickName},#{email},#{content},#{avatar},#{createTime},#{blogId},#{parentCommentId},#{adminComment});
+    </insert>
+
+    <!--删除评论
+        void deleteComment(Long id);
+    -->
+    <delete id="deleteComment">
+        delete from t_comment where id = #{id}
+    </delete>
+
+
+
+</mapper>

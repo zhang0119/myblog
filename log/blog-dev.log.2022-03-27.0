@@ -1,0 +1,548 @@
+2022-03-27 11:03:56.149  INFO 54412 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 54412 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 11:03:56.155  INFO 54412 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 11:03:58.303  INFO 54412 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.686 seconds (JVM running for 3.936)
+2022-03-27 11:04:24.167  INFO 54412 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.index', args=[{}, 1, {}]}
+2022-03-27 11:04:24.468  INFO 54412 --- [http-nio-8080-exec-1] c.e.myblog.controller.IndexController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[FirstPageBlog(id=4, title=姥姥的春节, firstPicture=/images/recommends/3.jpg, views=14, commentCount=1, createTime=Tue Mar 22 02:57:00 CST 2022, updateTime=Tue Mar 22 02:57:00 CST 2022, description=读者1, typeName=好文, username=admin, avatar=null), FirstPageBlog(id=3, title=真努力，需要正视自己, firstPicture=/images/recommends/2.jpg, views=1, commentCount=1, createTime=Tue Mar 22 02:54:39 CST 2022, updateTime=Tue Mar 22 02:54:39 CST 2022, description=美文2, typeName=思考, username=admin, avatar=null), FirstPageBlog(id=2, title=你和真努力还差了这几点, firstPicture=/images/recommends/1.jpg, views=1, commentCount=0, createTime=Mon Mar 21 22:11:18 CST 2022, updateTime=Tue Mar 22 02:57:12 CST 2022, description=好文1, typeName=好文, username=admin, avatar=null)], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2022-03-27 11:04:24.469  INFO 54412 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:index
+2022-03-27 11:04:24.470  INFO 54412 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 11:04:31.509  INFO 54412 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, -1, {}]}
+2022-03-27 11:04:31.534  INFO 54412 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 11:04:31.535  INFO 54412 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 11:05:07.284  INFO 51884 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 51884 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 11:05:07.287  INFO 51884 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 11:05:09.804  INFO 51884 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.053 seconds (JVM running for 5.463)
+2022-03-27 11:05:18.733  INFO 51884 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.index', args=[{}, 1, {}]}
+2022-03-27 11:05:21.953  INFO 51884 --- [http-nio-8080-exec-3] c.e.myblog.controller.IndexController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[FirstPageBlog(id=4, title=姥姥的春节, firstPicture=/images/recommends/3.jpg, views=14, commentCount=1, createTime=Tue Mar 22 02:57:00 CST 2022, updateTime=Tue Mar 22 02:57:00 CST 2022, description=读者1, typeName=好文, username=admin, avatar=null), FirstPageBlog(id=3, title=真努力，需要正视自己, firstPicture=/images/recommends/2.jpg, views=1, commentCount=1, createTime=Tue Mar 22 02:54:39 CST 2022, updateTime=Tue Mar 22 02:54:39 CST 2022, description=美文2, typeName=思考, username=admin, avatar=null), FirstPageBlog(id=2, title=你和真努力还差了这几点, firstPicture=/images/recommends/1.jpg, views=1, commentCount=0, createTime=Mon Mar 21 22:11:18 CST 2022, updateTime=Tue Mar 22 02:57:12 CST 2022, description=好文1, typeName=好文, username=admin, avatar=null)], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2022-03-27 11:05:21.953  INFO 51884 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:index
+2022-03-27 11:05:21.954  INFO 51884 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 11:05:25.917  INFO 51884 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, -1, {}]}
+2022-03-27 11:13:37.243  INFO 51884 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 11:13:37.244  INFO 51884 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 11:13:41.204  INFO 2644 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 2644 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 11:13:41.207  INFO 2644 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 11:13:44.567  INFO 2644 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 4.01 seconds (JVM running for 5.32)
+2022-03-27 11:13:56.829  INFO 2644 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.index', args=[{}, 1, {}]}
+2022-03-27 11:13:59.990  INFO 2644 --- [http-nio-8080-exec-1] c.e.myblog.controller.IndexController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[FirstPageBlog(id=4, title=姥姥的春节, firstPicture=/images/recommends/3.jpg, views=14, commentCount=1, createTime=Tue Mar 22 02:57:00 CST 2022, updateTime=Tue Mar 22 02:57:00 CST 2022, description=读者1, typeName=好文, username=admin, avatar=null), FirstPageBlog(id=3, title=真努力，需要正视自己, firstPicture=/images/recommends/2.jpg, views=1, commentCount=1, createTime=Tue Mar 22 02:54:39 CST 2022, updateTime=Tue Mar 22 02:54:39 CST 2022, description=美文2, typeName=思考, username=admin, avatar=null), FirstPageBlog(id=2, title=你和真努力还差了这几点, firstPicture=/images/recommends/1.jpg, views=1, commentCount=0, createTime=Mon Mar 21 22:11:18 CST 2022, updateTime=Tue Mar 22 02:57:12 CST 2022, description=好文1, typeName=好文, username=admin, avatar=null)], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2022-03-27 11:13:59.991  INFO 2644 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:index
+2022-03-27 11:13:59.991  INFO 2644 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 11:14:05.928  INFO 2644 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, -1, {}]}
+2022-03-27 11:24:19.936  INFO 2644 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 11:24:19.937  INFO 2644 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 11:24:24.192  INFO 34708 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 34708 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 11:24:24.196  INFO 34708 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 11:24:27.218  INFO 34708 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.653 seconds (JVM running for 4.898)
+2022-03-27 11:24:44.962  INFO 34708 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.index', args=[{}, 1, {}]}
+2022-03-27 11:24:47.537  INFO 34708 --- [http-nio-8080-exec-3] c.e.myblog.controller.IndexController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[FirstPageBlog(id=4, title=姥姥的春节, firstPicture=/images/recommends/3.jpg, views=14, commentCount=1, createTime=Tue Mar 22 02:57:00 CST 2022, updateTime=Tue Mar 22 02:57:00 CST 2022, description=读者1, typeName=好文, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=3, title=真努力，需要正视自己, firstPicture=/images/recommends/2.jpg, views=1, commentCount=1, createTime=Tue Mar 22 02:54:39 CST 2022, updateTime=Tue Mar 22 02:54:39 CST 2022, description=美文2, typeName=思考, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=2, title=你和真努力还差了这几点, firstPicture=/images/recommends/1.jpg, views=1, commentCount=0, createTime=Mon Mar 21 22:11:18 CST 2022, updateTime=Tue Mar 22 02:57:12 CST 2022, description=好文1, typeName=好文, username=admin, avatar=/images/14.jpg)], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2022-03-27 11:24:47.538  INFO 34708 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:index
+2022-03-27 11:24:47.538  INFO 34708 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 11:24:55.957  INFO 34708 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, -1, {}]}
+2022-03-27 11:47:28.735  INFO 34708 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 11:47:28.739  INFO 34708 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 13:14:15.830  INFO 47668 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 47668 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 13:14:15.830  INFO 47668 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 13:14:18.419  INFO 47668 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.197 seconds (JVM running for 5.251)
+2022-03-27 13:14:46.106  INFO 47668 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.index', args=[{}, 1, {}]}
+2022-03-27 13:14:50.384  INFO 47668 --- [http-nio-8080-exec-2] c.e.myblog.controller.IndexController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[FirstPageBlog(id=4, title=姥姥的春节, firstPicture=/images/recommends/3.jpg, views=14, commentCount=1, createTime=Tue Mar 22 02:57:00 CST 2022, updateTime=Tue Mar 22 02:57:00 CST 2022, description=读者1, typeName=好文, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=3, title=真努力，需要正视自己, firstPicture=/images/recommends/2.jpg, views=1, commentCount=1, createTime=Tue Mar 22 02:54:39 CST 2022, updateTime=Tue Mar 22 02:54:39 CST 2022, description=美文2, typeName=思考, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=2, title=你和真努力还差了这几点, firstPicture=/images/recommends/1.jpg, views=1, commentCount=0, createTime=Mon Mar 21 22:11:18 CST 2022, updateTime=Tue Mar 22 02:57:12 CST 2022, description=好文1, typeName=好文, username=admin, avatar=/images/14.jpg)], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2022-03-27 13:14:50.384  INFO 47668 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:index
+2022-03-27 13:14:50.384  INFO 47668 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 13:15:01.120  INFO 47668 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, -1, {}]}
+2022-03-27 14:11:38.149  INFO 47668 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 14:11:38.164  INFO 47668 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 14:11:38.214 ERROR 47668 --- [http-nio-8080-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-2] Exception processing template "types": Exception evaluating SpringEL expression: "#arrays.length(type.blogs)" (template: "types" - line 66, col 112)
+
+org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#arrays.length(type.blogs)" (template: "types" - line 66, col 112)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'blogs' cannot be found on object of type 'com.example.myblog.entity.Type' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.MethodReference.getArguments(MethodReference.java:164)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:81)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:70)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:91)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 64 common frames omitted
+
+2022-03-27 14:11:38.224 ERROR 47668 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#arrays.length(type.blogs)" (template: "types" - line 66, col 112)] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'blogs' cannot be found on object of type 'com.example.myblog.entity.Type' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.MethodReference.getArguments(MethodReference.java:164)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:81)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:70)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:91)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-03-27 14:11:45.112  INFO 46564 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 46564 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 14:11:45.122  INFO 46564 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 14:11:48.010  INFO 46564 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.477 seconds (JVM running for 4.79)
+2022-03-27 14:12:02.171  INFO 46564 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.index', args=[{}, 1, {}]}
+2022-03-27 14:12:02.411  INFO 46564 --- [http-nio-8080-exec-1] c.e.myblog.controller.IndexController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[FirstPageBlog(id=4, title=姥姥的春节, firstPicture=/images/recommends/3.jpg, views=14, commentCount=1, createTime=Tue Mar 22 02:57:00 CST 2022, updateTime=Tue Mar 22 02:57:00 CST 2022, description=读者1, typeName=好文, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=3, title=真努力，需要正视自己, firstPicture=/images/recommends/2.jpg, views=1, commentCount=1, createTime=Tue Mar 22 02:54:39 CST 2022, updateTime=Tue Mar 22 02:54:39 CST 2022, description=美文2, typeName=思考, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=2, title=你和真努力还差了这几点, firstPicture=/images/recommends/1.jpg, views=1, commentCount=0, createTime=Mon Mar 21 22:11:18 CST 2022, updateTime=Tue Mar 22 02:57:12 CST 2022, description=好文1, typeName=好文, username=admin, avatar=/images/14.jpg)], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2022-03-27 14:12:02.411  INFO 46564 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:index
+2022-03-27 14:12:02.411  INFO 46564 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 14:12:09.100  INFO 46564 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, -1, {}]}
+2022-03-27 14:12:09.116  INFO 46564 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 14:12:09.124  INFO 46564 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 14:16:01.810  INFO 45268 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 45268 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 14:16:01.810  INFO 45268 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 14:16:04.263  INFO 45268 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.942 seconds (JVM running for 4.066)
+2022-03-27 14:16:22.149  INFO 45268 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.index', args=[{}, 1, {}]}
+2022-03-27 14:16:22.389  INFO 45268 --- [http-nio-8080-exec-2] c.e.myblog.controller.IndexController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[FirstPageBlog(id=4, title=姥姥的春节, firstPicture=/images/recommends/3.jpg, views=14, commentCount=1, createTime=Tue Mar 22 02:57:00 CST 2022, updateTime=Tue Mar 22 02:57:00 CST 2022, description=读者1, typeName=好文, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=3, title=真努力，需要正视自己, firstPicture=/images/recommends/2.jpg, views=1, commentCount=1, createTime=Tue Mar 22 02:54:39 CST 2022, updateTime=Tue Mar 22 02:54:39 CST 2022, description=美文2, typeName=思考, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=2, title=你和真努力还差了这几点, firstPicture=/images/recommends/1.jpg, views=1, commentCount=0, createTime=Mon Mar 21 22:11:18 CST 2022, updateTime=Tue Mar 22 02:57:12 CST 2022, description=好文1, typeName=好文, username=admin, avatar=/images/14.jpg)], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2022-03-27 14:16:22.389  INFO 45268 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:index
+2022-03-27 14:16:22.389  INFO 45268 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 14:16:26.695  INFO 45268 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, -1, {}]}
+2022-03-27 14:16:26.711  INFO 45268 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 14:16:26.711  INFO 45268 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 14:16:26.735 ERROR 45268 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "types": Exception evaluating SpringEL expression: "#arrays.length(type.blogs)" (template: "types" - line 66, col 112)
+
+org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#arrays.length(type.blogs)" (template: "types" - line 66, col 112)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'blogs' cannot be found on object of type 'com.example.myblog.entity.Type' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.MethodReference.getArguments(MethodReference.java:164)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:81)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:70)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:91)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 64 common frames omitted
+
+2022-03-27 14:16:26.743 ERROR 45268 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#arrays.length(type.blogs)" (template: "types" - line 66, col 112)] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'blogs' cannot be found on object of type 'com.example.myblog.entity.Type' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.MethodReference.getArguments(MethodReference.java:164)
+	at org.springframework.expression.spel.ast.MethodReference.getValueRef(MethodReference.java:81)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:70)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:91)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
+	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-03-27 14:18:00.723  INFO 37512 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 37512 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 14:18:00.723  INFO 37512 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 14:18:03.369  INFO 37512 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.15 seconds (JVM running for 4.301)
+2022-03-27 14:18:06.646  INFO 37512 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, -1, {}]}
+2022-03-27 14:18:06.865  INFO 37512 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 14:18:06.865  INFO 37512 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 14:18:12.146  INFO 37512 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/blog/2', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.blog', args=[2, {}]}
+2022-03-27 14:18:12.209  INFO 37512 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:blog
+2022-03-27 14:18:12.209  INFO 37512 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 14:22:54.554  INFO 37512 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, 1, {}]}
+2022-03-27 14:22:54.562  INFO 37512 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 14:22:54.562  INFO 37512 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 14:23:07.665  INFO 37512 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/blog/4', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.blog', args=[4, {}]}
+2022-03-27 14:23:07.688  INFO 37512 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:blog
+2022-03-27 14:23:07.688  INFO 37512 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 14:23:21.755  INFO 37512 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/blog/4', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.blog', args=[4, {}]}
+2022-03-27 14:23:21.778  INFO 37512 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:blog
+2022-03-27 14:23:21.778  INFO 37512 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 14:23:26.307  INFO 37512 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, 1, {}]}
+2022-03-27 14:23:26.315  INFO 37512 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 14:23:26.315  INFO 37512 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 14:33:04.062  INFO 46436 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 46436 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 14:33:04.077  INFO 46436 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 14:33:06.639  INFO 46436 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.106 seconds (JVM running for 4.204)
+2022-03-27 14:33:12.445  INFO 46436 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.index', args=[{}, 1, {}]}
+2022-03-27 14:33:12.712  INFO 46436 --- [http-nio-8080-exec-1] c.e.myblog.controller.IndexController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[FirstPageBlog(id=4, title=姥姥的春节, firstPicture=/images/recommends/3.jpg, views=16, commentCount=1, createTime=Tue Mar 22 02:57:00 CST 2022, updateTime=Tue Mar 22 02:57:00 CST 2022, description=读者1, typeName=好文, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=3, title=真努力，需要正视自己, firstPicture=/images/recommends/2.jpg, views=1, commentCount=1, createTime=Tue Mar 22 02:54:39 CST 2022, updateTime=Tue Mar 22 02:54:39 CST 2022, description=美文2, typeName=思考, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=2, title=你和真努力还差了这几点, firstPicture=/images/recommends/1.jpg, views=2, commentCount=0, createTime=Mon Mar 21 22:11:18 CST 2022, updateTime=Tue Mar 22 02:57:12 CST 2022, description=好文1, typeName=好文, username=admin, avatar=/images/14.jpg)], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2022-03-27 14:33:12.712  INFO 46436 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:index
+2022-03-27 14:33:12.712  INFO 46436 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 14:33:15.593  INFO 46436 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, -1, {}]}
+2022-03-27 14:33:15.617  INFO 46436 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 14:33:15.617  INFO 46436 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 14:47:23.057  INFO 49984 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 49984 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 14:47:23.072  INFO 49984 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 14:47:26.164  INFO 49984 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.975 seconds (JVM running for 5.733)
+2022-03-27 14:47:33.695  INFO 49984 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, -1, {}]}
+2022-03-27 14:51:35.056  INFO 49984 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 14:51:35.056  INFO 49984 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 14:55:19.413  INFO 49984 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, -1, {}]}
+2022-03-27 15:03:35.908  INFO 49984 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 15:03:35.911  INFO 49984 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:03:40.356  INFO 54052 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 54052 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 15:03:40.360  INFO 54052 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 15:03:43.595  INFO 54052 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.868 seconds (JVM running for 5.108)
+2022-03-27 15:03:47.450  INFO 54052 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, -1, {}]}
+2022-03-27 15:04:13.421  INFO 54052 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 15:04:13.422  INFO 54052 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:05:12.854  INFO 53564 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 53564 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 15:05:12.858  INFO 53564 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 15:05:15.916  INFO 53564 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.646 seconds (JVM running for 5.033)
+2022-03-27 15:05:20.416  INFO 53564 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, -1, {}]}
+2022-03-27 15:22:10.808  INFO 53564 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 15:22:10.809  INFO 53564 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:36:55.143  INFO 44024 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 44024 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 15:36:55.151  INFO 44024 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 15:36:57.351  INFO 44024 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.663 seconds (JVM running for 3.582)
+2022-03-27 15:37:07.078  INFO 44024 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.index', args=[{}, 1, {}]}
+2022-03-27 15:37:07.327  INFO 44024 --- [http-nio-8080-exec-3] c.e.myblog.controller.IndexController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[FirstPageBlog(id=4, title=姥姥的春节, firstPicture=/images/recommends/3.jpg, views=16, commentCount=1, createTime=Tue Mar 22 02:57:00 CST 2022, updateTime=Tue Mar 22 02:57:00 CST 2022, description=读者1, typeName=好文, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=3, title=真努力，需要正视自己, firstPicture=/images/recommends/2.jpg, views=1, commentCount=1, createTime=Tue Mar 22 02:54:39 CST 2022, updateTime=Tue Mar 22 02:54:39 CST 2022, description=美文2, typeName=思考, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=2, title=你和真努力还差了这几点, firstPicture=/images/recommends/1.jpg, views=2, commentCount=0, createTime=Mon Mar 21 22:11:18 CST 2022, updateTime=Tue Mar 22 02:57:12 CST 2022, description=好文1, typeName=好文, username=admin, avatar=/images/14.jpg)], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2022-03-27 15:37:07.328  INFO 44024 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:index
+2022-03-27 15:37:07.328  INFO 44024 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:37:22.509  INFO 44024 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/blog/4', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.blog', args=[4, {}]}
+2022-03-27 15:37:22.572  INFO 44024 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:blog
+2022-03-27 15:37:22.573  INFO 44024 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:37:30.300  INFO 44024 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/blog/4', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.blog', args=[4, {}]}
+2022-03-27 15:37:30.321  INFO 44024 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:blog
+2022-03-27 15:37:30.321  INFO 44024 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:37:38.584  INFO 44024 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, -1, {}]}
+2022-03-27 15:37:38.598  INFO 44024 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 15:37:38.599  INFO 44024 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:43:05.231  INFO 44024 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/2', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, 2, {}]}
+2022-03-27 15:43:05.243  INFO 44024 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 15:43:05.244  INFO 44024 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:43:07.754  INFO 44024 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, 1, {}]}
+2022-03-27 15:43:07.760  INFO 44024 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 15:43:07.760  INFO 44024 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:43:10.454  INFO 44024 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/2', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, 2, {}]}
+2022-03-27 15:43:10.460  INFO 44024 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 15:43:10.461  INFO 44024 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:43:11.906  INFO 44024 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, 1, {}]}
+2022-03-27 15:43:11.911  INFO 44024 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 15:43:11.912  INFO 44024 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:48:06.680  INFO 54328 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 54328 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 15:48:06.683  INFO 54328 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 15:48:08.925  INFO 54328 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.68 seconds (JVM running for 3.604)
+2022-03-27 15:48:13.194  INFO 54328 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, 1, {}]}
+2022-03-27 15:48:13.368  INFO 54328 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 15:48:13.368  INFO 54328 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:48:17.624  INFO 54328 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/2', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, 2, {}]}
+2022-03-27 15:48:17.632  INFO 54328 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 15:48:17.633  INFO 54328 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:48:20.006  INFO 54328 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, 1, {}]}
+2022-03-27 15:48:20.012  INFO 54328 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 15:48:20.013  INFO 54328 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:49:36.793  INFO 53020 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 53020 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 15:49:36.798  INFO 53020 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 15:49:39.395  INFO 53020 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.106 seconds (JVM running for 4.273)
+2022-03-27 15:49:45.340  INFO 53020 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, 1, {}]}
+2022-03-27 15:49:45.516  INFO 53020 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 15:49:45.516  INFO 53020 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:49:53.875  INFO 53020 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, 1, {}]}
+2022-03-27 15:49:53.882  INFO 53020 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 15:49:53.883  INFO 53020 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:49:56.878  INFO 53020 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, 1, {}]}
+2022-03-27 15:49:56.883  INFO 53020 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 15:49:56.884  INFO 53020 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 15:50:20.758  INFO 55028 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 55028 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 15:50:20.762  INFO 55028 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 15:50:23.984  INFO 55028 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.892 seconds (JVM running for 5.19)
+2022-03-27 15:50:25.903  INFO 55028 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, 1, {}]}
+2022-03-27 16:07:38.312  INFO 55028 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 16:07:38.313  INFO 55028 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 16:07:43.418  INFO 49784 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 49784 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 16:07:43.422  INFO 49784 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 16:07:46.428  INFO 49784 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.669 seconds (JVM running for 4.96)
+2022-03-27 16:07:56.146  INFO 49784 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, 1, {}]}
+2022-03-27 16:10:28.462  INFO 49784 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 16:10:28.463  INFO 49784 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 16:10:33.013  INFO 49784 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/2', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, 2, {}]}
+2022-03-27 16:10:36.698  INFO 49784 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 16:10:36.700  INFO 49784 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 16:22:53.215  INFO 6596 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 6596 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 16:22:53.220  INFO 6596 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 16:22:56.027  INFO 6596 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.473 seconds (JVM running for 4.612)
+2022-03-27 16:23:07.770  INFO 6596 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.index', args=[{}, 1, {}]}
+2022-03-27 16:23:13.719  INFO 6596 --- [http-nio-8080-exec-1] c.e.myblog.controller.IndexController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[FirstPageBlog(id=4, title=姥姥的春节, firstPicture=/images/recommends/3.jpg, views=18, commentCount=1, createTime=Tue Mar 22 02:57:00 CST 2022, updateTime=Tue Mar 22 02:57:00 CST 2022, description=读者1, typeName=好文, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=3, title=真努力，需要正视自己, firstPicture=/images/recommends/2.jpg, views=1, commentCount=1, createTime=Tue Mar 22 02:54:39 CST 2022, updateTime=Tue Mar 22 02:54:39 CST 2022, description=美文2, typeName=思考, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=2, title=你和真努力还差了这几点, firstPicture=/images/recommends/1.jpg, views=2, commentCount=0, createTime=Mon Mar 21 22:11:18 CST 2022, updateTime=Tue Mar 22 02:57:12 CST 2022, description=好文1, typeName=好文, username=admin, avatar=/images/14.jpg)], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2022-03-27 16:23:13.720  INFO 6596 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:index
+2022-03-27 16:23:13.721  INFO 6596 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 16:23:35.388  INFO 6596 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.TypeShowController.types', args=[1, -1, {}]}
+2022-03-27 16:23:42.323  INFO 6596 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:types
+2022-03-27 16:23:42.323  INFO 6596 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 16:25:59.548  INFO 24632 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 24632 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 16:25:59.554  INFO 24632 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 16:26:02.648  INFO 24632 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.748 seconds (JVM running for 5.424)
+2022-03-27 16:26:07.588  INFO 24632 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.index', args=[{}, 1, {}]}
+2022-03-27 16:26:07.875  INFO 24632 --- [http-nio-8080-exec-1] c.e.myblog.controller.IndexController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[FirstPageBlog(id=4, title=姥姥的春节, firstPicture=/images/recommends/3.jpg, views=18, commentCount=1, createTime=Tue Mar 22 02:57:00 CST 2022, updateTime=Tue Mar 22 02:57:00 CST 2022, description=读者1, typeName=好文, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=3, title=真努力，需要正视自己, firstPicture=/images/recommends/2.jpg, views=1, commentCount=1, createTime=Tue Mar 22 02:54:39 CST 2022, updateTime=Tue Mar 22 02:54:39 CST 2022, description=美文2, typeName=思考, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=2, title=你和真努力还差了这几点, firstPicture=/images/recommends/1.jpg, views=2, commentCount=0, createTime=Mon Mar 21 22:11:18 CST 2022, updateTime=Tue Mar 22 02:57:12 CST 2022, description=好文1, typeName=好文, username=admin, avatar=/images/14.jpg)], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2022-03-27 16:26:07.877  INFO 24632 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:index
+2022-03-27 16:26:07.877  INFO 24632 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 16:26:17.530  INFO 24632 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.ArchiveShowController.archive', args=[{}]}
+2022-03-27 16:36:39.867  INFO 24632 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:archives
+2022-03-27 16:36:39.868  INFO 24632 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 16:36:43.848  INFO 55192 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 55192 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-27 16:36:43.851  INFO 55192 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-27 16:36:47.108  INFO 55192 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.894 seconds (JVM running for 5.14)
+2022-03-27 16:37:12.190  INFO 55192 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.index', args=[{}, 1, {}]}
+2022-03-27 16:37:12.489  INFO 55192 --- [http-nio-8080-exec-2] c.e.myblog.controller.IndexController    : pageInfo:PageInfo{pageNum=1, pageSize=10, size=3, startRow=1, endRow=3, total=3, pages=1, list=Page{count=true, pageNum=1, pageSize=10, startRow=0, endRow=10, total=3, pages=1, reasonable=false, pageSizeZero=false}[FirstPageBlog(id=4, title=姥姥的春节, firstPicture=/images/recommends/3.jpg, views=18, commentCount=1, createTime=Tue Mar 22 02:57:00 CST 2022, updateTime=Tue Mar 22 02:57:00 CST 2022, description=读者1, typeName=好文, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=3, title=真努力，需要正视自己, firstPicture=/images/recommends/2.jpg, views=1, commentCount=1, createTime=Tue Mar 22 02:54:39 CST 2022, updateTime=Tue Mar 22 02:54:39 CST 2022, description=美文2, typeName=思考, username=admin, avatar=/images/14.jpg), FirstPageBlog(id=2, title=你和真努力还差了这几点, firstPicture=/images/recommends/1.jpg, views=2, commentCount=0, createTime=Mon Mar 21 22:11:18 CST 2022, updateTime=Tue Mar 22 02:57:12 CST 2022, description=好文1, typeName=好文, username=admin, avatar=/images/14.jpg)], prePage=0, nextPage=0, isFirstPage=true, isLastPage=true, hasPreviousPage=false, hasNextPage=false, navigatePages=8, navigateFirstPage=1, navigateLastPage=1, navigatepageNums=[1]}
+2022-03-27 16:37:12.490  INFO 55192 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:index
+2022-03-27 16:37:12.491  INFO 55192 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 16:37:16.291  INFO 55192 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.ArchiveShowController.archive', args=[{}]}
+2022-03-27 16:37:19.666  INFO 55192 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:archives
+2022-03-27 16:37:19.667  INFO 55192 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-27 16:37:33.277  INFO 55192 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/blog/2', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.blog', args=[2, {}]}
+2022-03-27 16:37:37.209  INFO 55192 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:blog
+2022-03-27 16:37:37.210  INFO 55192 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------

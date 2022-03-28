@@ -1,5 +1,6 @@
 package com.example.myblog.controller;
 
+import com.example.myblog.queryvo.DetailedBlog;
 import com.example.myblog.queryvo.FirstPageBlog;
 import com.example.myblog.queryvo.RecommendBlog;
 import com.example.myblog.service.BlogService;
@@ -8,10 +9,7 @@ import com.github.pagehelper.PageInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.HashMap;
@@ -60,7 +58,7 @@ public class IndexController {
     public String search(Model model,
                          @RequestParam(defaultValue = "1",value="pageNum")Integer pageNum,
                          @RequestParam("query") String query){
-        PageHelper.startPage(pageNum,1000);
+        PageHelper.startPage(pageNum,10);
         List<FirstPageBlog> searchBlog = blogService.getSearchBlog(query);
 
         PageInfo<FirstPageBlog> pageInfo = new PageInfo<>(searchBlog);
@@ -92,7 +90,16 @@ public class IndexController {
         return "index :: blogMessage";
     }
 
+    /**
+     * 跳转到博客详情页
+     */
+    @GetMapping("/blog/{id}")
+    public String blog(@PathVariable("id")Long id,Model model){
 
+        DetailedBlog detailedBlog = blogService.getDetailedBlog(id);
+        model.addAttribute("blog",detailedBlog);
 
+        return "blog";
+    }
 
 }

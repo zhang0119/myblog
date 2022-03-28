@@ -30,4 +30,8 @@ public interface TypeService {
 
     /*删除分类*/
     void deleteType(Long id);
+
+    /*-----分类页面下调用的接口----------------------------------------------*/
+    //查询所有分类
+    List<Type> getAllTypeAndBlog();
 }

@@ -187,7 +187,72 @@
        select count(*) from t_message;
     </select>
 
+    <!--//////////////////////////////////////////////////////////////////////////////-->
+    <resultMap id="detailedBlog" type="com.example.myblog.queryvo.DetailedBlog">
+        <id property="id" column="id"/>
+        <result property="firstPicture" column="first_picture"/>
+        <result property="flag" column="flag"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
 
+        <result property="views" column="views"/>
+        <result property="commentCount" column="comment_count"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="commentAble" column="comment_able"/>
+        <result property="shareStatement" column="share_statement"/>
+        <result property="appreciation" column="appreciation"/>
 
+        <result property="nickName" column="nick_name"/>
+        <result property="avatar" column="avatar"/>
+
+        <result property="typeName" column="name"/>
+    </resultMap>
+
+    <!--
+        /*查询博客详情*/
+        DetailedBlog getDetailedBlog(Long id);
+    -->
+    <select id="getDetailedBlog" resultMap="detailedBlog">
+        select
+        b.id,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.comment_able,b.first_picture,b.share_statement,
+        u.username,u.avatar,
+        t.name
+        from t_blog b,t_type t,t_user u
+        where b.user_id=u.id and b.type_id=t.id and b.id=#{id}
+    </select>
+
+    <!--
+        /*文章访问更新,更新浏览量,即文章访问自增*/
+        int updateViews(Long id);
+    -->
+    <update id="updateViews" parameterType="blog">
+        update t_blog b set b.views = b.views+1 where b.id = #{id}
+    </update>
+
+    <!--
+        /*根据博客id查询出评论数量
+          查询出文章评论并更新
+        */
+        int getCommentCountById(Long id);
+    -->
+    <update id="getCommentCountById" parameterType="blog">
+        update t_blog b set b.comment_count = (
+            select count(*) from t_comment c where c.blog_id = #{id} and b.id = #{id})
+        where b.id = #{id}
+    </update>
+
+    <!--
+        /*根据typeId查询博客列表，显示在分类页面*/
+        List<FirstPageBlog> getByTypeId(Long typeId);
+    -->
+    <select id="getByTypeId" resultType="com.example.myblog.queryvo.FirstPageBlog">
+        select
+            b.id,b.title,b.first_picture,b.views,comment_count,b.update_time,b.description,
+            t.name typeName,
+            u.username,u.avatar
+        from t_blog b , t_type t, t_user u
+        where b.user_id = u.id and b.type_id = t.id and b.type_id = #{typeId}
+        order by b.update_time desc
+    </select>
 
 </mapper>

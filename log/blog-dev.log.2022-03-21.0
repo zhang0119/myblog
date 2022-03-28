@@ -1,0 +1,1179 @@
+2022-03-21 16:06:37.225  INFO 25072 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 25072 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-21 16:06:37.241  INFO 25072 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-21 16:06:39.867  INFO 25072 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.192 seconds (JVM running for 4.195)
+2022-03-21 16:06:54.668  INFO 25072 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.index', args=[]}
+2022-03-21 16:06:54.673  INFO 25072 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:index
+2022-03-21 16:06:54.674  INFO 25072 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 16:07:01.459  INFO 25072 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-21 16:07:01.464  INFO 25072 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-21 16:07:01.465  INFO 25072 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 16:07:09.725  INFO 25072 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@63471e38, {}]}
+2022-03-21 16:07:09.954  INFO 25072 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-21 16:07:09.955  INFO 25072 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 16:07:12.588  INFO 25072 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types;jsessionid=F34BE95FA1B20FD97C5CE9FD4FD441A6', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{}, 1]}
+2022-03-21 16:07:12.661  INFO 25072 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-21 16:07:12.661  INFO 25072 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 16:07:15.725  INFO 25072 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/3/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.editInput', args=[3, {}]}
+2022-03-21 16:07:15.730  INFO 25072 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-21 16:07:15.730  INFO 25072 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 16:07:22.349  INFO 25072 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/3', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.editPost', args=[Type(id=3, name=fanyi, blogList=[]), {}]}
+2022-03-21 16:07:22.359  INFO 25072 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-21 16:07:22.360  INFO 25072 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 16:07:22.382  INFO 25072 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=编辑成功}, 1]}
+2022-03-21 16:07:22.388  INFO 25072 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-21 16:07:22.389  INFO 25072 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 16:07:24.507  INFO 25072 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/3/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.editInput', args=[3, {}]}
+2022-03-21 16:07:24.512  INFO 25072 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-21 16:07:24.512  INFO 25072 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 16:07:31.541  INFO 25072 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/3', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.editPost', args=[Type(id=3, name=翻译, blogList=[]), {}]}
+2022-03-21 16:07:31.550  INFO 25072 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-21 16:07:31.551  INFO 25072 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 16:07:31.560  INFO 25072 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=编辑成功}, 1]}
+2022-03-21 16:07:31.566  INFO 25072 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-21 16:07:31.566  INFO 25072 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 16:07:35.446  INFO 25072 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/3/delete', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.delete', args=[3, {}]}
+2022-03-21 16:07:35.459  INFO 25072 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-21 16:07:35.459  INFO 25072 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 16:07:35.470  INFO 25072 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=删除成功}, 1]}
+2022-03-21 16:07:35.479  INFO 25072 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-21 16:07:35.479  INFO 25072 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 16:07:37.987  INFO 25072 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.input', args=[{}]}
+2022-03-21 16:07:37.987  INFO 25072 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-21 16:07:37.988  INFO 25072 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 16:07:42.461  INFO 25072 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.post', args=[Type(id=null, name=翻译, blogList=[]), {}]}
+2022-03-21 16:07:42.475  INFO 25072 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/types
+2022-03-21 16:07:42.475  INFO 25072 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 16:07:42.484  INFO 25072 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{message=新增成功}, 1]}
+2022-03-21 16:07:42.492  INFO 25072 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-21 16:07:42.492  INFO 25072 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 16:07:50.801  INFO 25072 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.input', args=[{}]}
+2022-03-21 16:07:50.802  INFO 25072 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/types-input
+2022-03-21 16:07:50.802  INFO 25072 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 20:23:56.914  INFO 15612 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 15612 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-21 20:23:56.917  INFO 15612 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-21 20:23:58.659  INFO 15612 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.071 seconds (JVM running for 3.093)
+2022-03-21 20:24:03.182  INFO 15612 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-21 20:24:03.185  INFO 15612 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-21 20:24:03.186  INFO 15612 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 20:24:14.707  INFO 15612 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@57b67c44, {}]}
+2022-03-21 20:24:14.839  INFO 15612 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-21 20:24:14.839  INFO 15612 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 20:24:17.663  INFO 15612 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{}, 1]}
+2022-03-21 20:26:35.462  INFO 15612 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-21 20:26:35.463  INFO 15612 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 20:27:02.618  INFO 15612 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.TypeController.list', args=[{}, 1]}
+2022-03-21 20:27:02.624  INFO 15612 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:admin/types
+2022-03-21 20:27:02.624  INFO 15612 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 20:27:06.875  INFO 15612 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2022-03-21 20:27:45.334  INFO 15612 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:admin/blogs
+2022-03-21 20:27:45.334  INFO 15612 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 20:28:10.551  INFO 15612 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.input', args=[{}]}
+2022-03-21 20:28:10.553  INFO 15612 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/blogs-input
+2022-03-21 20:28:10.554  INFO 15612 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 20:35:04.405  INFO 15612 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.post', args=[Blog(id=null, title=他笑时风华正茂, content=那并不是她第一次遇见他。
+
+只是那次，KTV走廊，他搂着怀里的女孩笑的风情万种。
+
+她印象太深刻。
+
+后来呢?
+
+后来--
+
+男友陆司北豪请狐朋狗友，他来晚了。
+
+有人喊:"来晚了罚酒啊。"
+
+"怎么没带女朋友?"
+
+那人淡淡的一笑，"分了。"
+
+"嗬，这次几个月?"
+
+那人抬眼，声音清淡:"够了啊。"
+
+包间里，灯光半明半暗。孟盛楠低着头喝可乐，渗进舌头上却又凉又苦。那时候，她还没意识到，在后来竟会真的非他不可了。, firstPicture=friendsbg, flag=, views=null, commentCount=null, appreciation=true, shareStatement=false, commentAble=false, published=true, recommend=true, createTime=null, updateTime=null, description=好文推荐一, type=Type(id=2, name=null, blogList=[]), user=null, typeId=2, userId=null, comments=[]), {}, org.apache.catalina.session.StandardSessionFacade@57b67c44]}
+2022-03-21 20:37:51.524  INFO 15612 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 20:37:51.527 ERROR 15612 --- [http-nio-8080-exec-8] c.e.m.hander.ControllerExceptionHandler  : Request URL: http://localhost:8080/admin/blogs,Exception: {}
+
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'first_picture' in 'class com.example.myblog.entity.Blog'
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:96)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at com.sun.proxy.$Proxy74.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy75.saveBlog(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy76.saveBlog(Unknown Source)
+	at com.example.myblog.service.impl.BlogServiceImpl.saveBlog(BlogServiceImpl.java:40)
+	at com.example.myblog.controller.admin.BlogController.post(BlogController.java:89)
+	at com.example.myblog.controller.admin.BlogController$$FastClassBySpringCGLIB$$21a82b00.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.example.myblog.controller.admin.BlogController$$EnhancerBySpringCGLIB$$6fb67e1d.post(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'first_picture' in 'class com.example.myblog.entity.Blog'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:374)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy103.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 88 common frames omitted
+
+2022-03-21 20:48:21.644  INFO 15612 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.post', args=[Blog(id=null, title=他笑时风华正茂, content=那并不是她第一次遇见他。
+
+只是那次，KTV走廊，他搂着怀里的女孩笑的风情万种。
+
+她印象太深刻。
+
+后来呢?
+
+后来--
+
+男友陆司北豪请狐朋狗友，他来晚了。
+
+有人喊:"来晚了罚酒啊。"
+
+"怎么没带女朋友?"
+
+那人淡淡的一笑，"分了。"
+
+"嗬，这次几个月?"
+
+那人抬眼，声音清淡:"够了啊。"
+
+包间里，灯光半明半暗。孟盛楠低着头喝可乐，渗进舌头上却又凉又苦。那时候，她还没意识到，在后来竟会真的非他不可了。, firstPicture=https://github.com/1, flag=原创, views=null, commentCount=null, appreciation=true, shareStatement=false, commentAble=false, published=true, recommend=true, createTime=null, updateTime=null, description=好文推荐一, type=Type(id=1, name=null, blogList=[]), user=null, typeId=1, userId=null, comments=[]), {}, org.apache.catalina.session.StandardSessionFacade@57b67c44]}
+2022-03-21 20:48:24.368  INFO 15612 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 20:48:24.369 ERROR 15612 --- [http-nio-8080-exec-2] c.e.m.hander.ControllerExceptionHandler  : Request URL: http://localhost:8080/admin/blogs,Exception: {}
+
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'first_picture' in 'class com.example.myblog.entity.Blog'
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:96)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at com.sun.proxy.$Proxy74.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy75.saveBlog(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy76.saveBlog(Unknown Source)
+	at com.example.myblog.service.impl.BlogServiceImpl.saveBlog(BlogServiceImpl.java:40)
+	at com.example.myblog.controller.admin.BlogController.post(BlogController.java:89)
+	at com.example.myblog.controller.admin.BlogController$$FastClassBySpringCGLIB$$21a82b00.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.example.myblog.controller.admin.BlogController$$EnhancerBySpringCGLIB$$6fb67e1d.post(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'first_picture' in 'class com.example.myblog.entity.Blog'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:374)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy103.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 88 common frames omitted
+
+2022-03-21 20:55:52.355  INFO 15612 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.post', args=[Blog(id=null, title=他笑时风华正茂, content=那并不是她第一次遇见他。
+
+只是那次，KTV走廊，他搂着怀里的女孩笑的风情万种。
+
+她印象太深刻。
+
+后来呢?
+
+后来--
+
+男友陆司北豪请狐朋狗友，他来晚了。
+
+有人喊:"来晚了罚酒啊。"
+
+"怎么没带女朋友?"
+
+那人淡淡的一笑，"分了。"
+
+"嗬，这次几个月?"
+
+那人抬眼，声音清淡:"够了啊。"
+
+包间里，灯光半明半暗。孟盛楠低着头喝可乐，渗进舌头上却又凉又苦。那时候，她还没意识到，在后来竟会真的非他不可了。, firstPicture=https://picsum.photos/id/1/, flag=, views=null, commentCount=null, appreciation=true, shareStatement=false, commentAble=false, published=true, recommend=true, createTime=null, updateTime=null, description=好文推荐一, type=Type(id=2, name=null, blogList=[]), user=null, typeId=2, userId=null, comments=[]), {}, org.apache.catalina.session.StandardSessionFacade@57b67c44]}
+2022-03-21 20:56:06.912  INFO 15612 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 20:56:06.913 ERROR 15612 --- [http-nio-8080-exec-7] c.e.m.hander.ControllerExceptionHandler  : Request URL: http://localhost:8080/admin/blogs,Exception: {}
+
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'first_picture' in 'class com.example.myblog.entity.Blog'
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:96)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at com.sun.proxy.$Proxy74.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy75.saveBlog(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy76.saveBlog(Unknown Source)
+	at com.example.myblog.service.impl.BlogServiceImpl.saveBlog(BlogServiceImpl.java:40)
+	at com.example.myblog.controller.admin.BlogController.post(BlogController.java:89)
+	at com.example.myblog.controller.admin.BlogController$$FastClassBySpringCGLIB$$21a82b00.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.example.myblog.controller.admin.BlogController$$EnhancerBySpringCGLIB$$6fb67e1d.post(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'first_picture' in 'class com.example.myblog.entity.Blog'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:374)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy103.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 88 common frames omitted
+
+2022-03-21 20:56:30.314  INFO 26280 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 26280 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-21 20:56:30.317  INFO 26280 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-21 20:56:32.370  INFO 26280 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.583 seconds (JVM running for 3.526)
+2022-03-21 20:56:43.107  INFO 26280 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-21 20:56:43.113  INFO 26280 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-21 20:56:43.113  INFO 26280 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 20:56:49.275  INFO 26280 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@5d7528fd, {}]}
+2022-03-21 20:56:49.412  INFO 26280 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-21 20:56:49.412  INFO 26280 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 20:56:55.454  INFO 26280 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-21 20:56:55.455  INFO 26280 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-21 20:56:55.455  INFO 26280 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 20:56:57.519  INFO 26280 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2022-03-21 20:56:59.618  INFO 26280 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/blogs
+2022-03-21 20:56:59.618  INFO 26280 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 20:57:05.681  INFO 26280 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.input', args=[{}]}
+2022-03-21 20:57:05.683  INFO 26280 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/blogs-input
+2022-03-21 20:57:05.684  INFO 26280 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 20:58:31.287  INFO 26280 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.post', args=[Blog(id=null, title=如何看待中国文化输出？, content=如何看待中国文化输出？
+
+如何看待中国文化输出？
+如何看待中国文化输出？
+如何看待中国文化输出？
+如何看待中国文化输出？, firstPicture=https://picsum.photos/id/1/, flag=, views=null, commentCount=null, appreciation=true, shareStatement=false, commentAble=false, published=true, recommend=true, createTime=null, updateTime=null, description=fafafa, type=Type(id=2, name=null, blogList=[]), user=null, typeId=2, userId=null, comments=[]), {}, org.apache.catalina.session.StandardSessionFacade@5d7528fd]}
+2022-03-21 20:58:34.732  INFO 26280 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 20:58:34.735 ERROR 26280 --- [http-nio-8080-exec-8] c.e.m.hander.ControllerExceptionHandler  : Request URL: http://localhost:8080/admin/blogs,Exception: {}
+
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'first_picture' in 'class com.example.myblog.entity.Blog'
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:96)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at com.sun.proxy.$Proxy74.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy75.saveBlog(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy76.saveBlog(Unknown Source)
+	at com.example.myblog.service.impl.BlogServiceImpl.saveBlog(BlogServiceImpl.java:40)
+	at com.example.myblog.controller.admin.BlogController.post(BlogController.java:88)
+	at com.example.myblog.controller.admin.BlogController$$FastClassBySpringCGLIB$$21a82b00.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.example.myblog.controller.admin.BlogController$$EnhancerBySpringCGLIB$$6b03e850.post(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'first_picture' in 'class com.example.myblog.entity.Blog'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:374)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy103.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 88 common frames omitted
+
+2022-03-21 21:01:15.248  INFO 21448 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 21448 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-21 21:01:15.250  INFO 21448 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-21 21:01:16.719  INFO 21448 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 1.778 seconds (JVM running for 2.29)
+2022-03-21 21:01:24.467  INFO 21448 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-21 21:01:24.470  INFO 21448 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-21 21:01:24.470  INFO 21448 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:01:29.731  INFO 21448 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@4bc31659, {}]}
+2022-03-21 21:01:29.842  INFO 21448 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-21 21:01:29.842  INFO 21448 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:01:33.671  INFO 21448 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2022-03-21 21:01:33.706  INFO 21448 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/blogs
+2022-03-21 21:01:33.707  INFO 21448 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:01:35.517  INFO 21448 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.input', args=[{}]}
+2022-03-21 21:01:35.519  INFO 21448 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : Result:admin/blogs-input
+2022-03-21 21:01:35.519  INFO 21448 --- [http-nio-8080-exec-7] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:01:52.734  INFO 21448 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.post', args=[Blog(id=null, title=test, content=ftfaljflafa, firstPicture=https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E9%A3%8E%E6%99%AF%E5%9B%BE&hs=0&pn=0&spn=0&di=7060663421280190465&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&ie=utf-8&oe=utf-8&cl=2&lm=-1&cs=2821960685%2C288052826&os=2552627468%2C4161323397&simid=2821960685%2C288052826&adpicid=0&lpn=0&ln=30&fr=ala&fm=&sme=&cg=&bdtype=0&oriquery=%E9%A3%8E%E6%99%AF%E5%9B%BE&objurl=https%3A%2F%2Fgimg2.baidu.com%2Fimage_search%2Fsrc%3Dhttp%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2Ftp06%2F200QQU3202Y7-0-lp.jpg%26refer%3Dhttp%3A%2F%2Fimg.jj20.com%26app%3D2002%26size%3Df9999%2C10000%26q%3Da80%26n%3D0%26g%3D0n%26fmt%3Dauto%3Fsec%3D1650459632%26t%3Dbddc6b609466e14fa6b30c1d8cd12747&fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3B33da_z%26e3Bv54AzdH3FprAzdH3Fdm8c8a_z%26e3Bip4s&gsm=1&islist=&querylist=&dyTabStr=MCwzLDYsMSw0LDUsNywyLDgsOQ%3D%3D, flag=, views=null, commentCount=null, appreciation=false, shareStatement=false, commentAble=false, published=true, recommend=true, createTime=null, updateTime=null, description=fafalfjalfa, type=Type(id=1, name=null, blogList=[]), user=null, typeId=1, userId=null, comments=[]), {}, org.apache.catalina.session.StandardSessionFacade@4bc31659]}
+2022-03-21 21:01:52.741  INFO 21448 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:01:52.744 ERROR 21448 --- [http-nio-8080-exec-6] c.e.m.hander.ControllerExceptionHandler  : Request URL: http://localhost:8080/admin/blogs,Exception: {}
+
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'first_picture' in 'class com.example.myblog.entity.Blog'
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:96)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at com.sun.proxy.$Proxy74.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy75.saveBlog(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy76.saveBlog(Unknown Source)
+	at com.example.myblog.service.impl.BlogServiceImpl.saveBlog(BlogServiceImpl.java:40)
+	at com.example.myblog.controller.admin.BlogController.post(BlogController.java:88)
+	at com.example.myblog.controller.admin.BlogController$$FastClassBySpringCGLIB$$21a82b00.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.example.myblog.controller.admin.BlogController$$EnhancerBySpringCGLIB$$45d7f984.post(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'first_picture' in 'class com.example.myblog.entity.Blog'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:374)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy103.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 88 common frames omitted
+
+2022-03-21 21:27:00.162  INFO 24112 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 24112 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-21 21:27:00.166  INFO 24112 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-21 21:27:02.615  INFO 24112 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.036 seconds (JVM running for 3.932)
+2022-03-21 21:27:25.083  INFO 24112 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-21 21:27:25.092  INFO 24112 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-21 21:27:25.092  INFO 24112 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:27:31.630  INFO 24112 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@10b026ea, {}]}
+2022-03-21 21:27:31.842  INFO 24112 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-21 21:27:31.843  INFO 24112 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:27:52.276  INFO 24112 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2022-03-21 21:27:52.366  INFO 24112 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/blogs
+2022-03-21 21:27:52.366  INFO 24112 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:27:54.736  INFO 24112 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.input', args=[{}]}
+2022-03-21 21:27:54.740  INFO 24112 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/blogs-input
+2022-03-21 21:27:54.740  INFO 24112 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:28:59.150  INFO 24112 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.post', args=[Blog(id=null, title=转弯，也是人生的一种前进方式, content=听过一个故事，一对师徒一同下山，徒弟问师父：如果现在下不去也上不来，该怎么办？师父思索后说：那就往旁边去。师父的回答让人醍醐灌顶，有时候，钻牛角尖和峰回路转，往往就在一念之间。
+
+　　人生路上，何尝不是如此？很多人在迷茫时便陷入了思维的困境，前行和后退都无解，却忽略了转弯的魅力。阳光转个弯，能照射到无法直射的地方；思维转个弯，能发现意想不到的路径。
+
+　　生活的道路，并不总是笔直平坦的。你要知道，路的旁边也是路，懂得转弯的人，总会在“山重水复疑无路”时找到“柳暗花明又一村”。, firstPicture=https://picsum.photos/id/1/, flag=, views=null, commentCount=null, appreciation=false, shareStatement=false, commentAble=false, published=true, recommend=true, createTime=null, updateTime=null, description=好文推荐一, type=Type(id=1, name=null, blogList=[]), user=null, typeId=1, userId=null, comments=[]), {}, org.apache.catalina.session.StandardSessionFacade@10b026ea]}
+2022-03-21 21:28:59.169  INFO 24112 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:28:59.172 ERROR 24112 --- [http-nio-8080-exec-8] c.e.m.hander.ControllerExceptionHandler  : Request URL: http://localhost:8080/admin/blogs,Exception: {}
+
+org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'first_picture' in 'class com.example.myblog.entity.Blog'
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:96)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at com.sun.proxy.$Proxy74.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy75.saveBlog(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy76.saveBlog(Unknown Source)
+	at com.example.myblog.service.impl.BlogServiceImpl.saveBlog(BlogServiceImpl.java:40)
+	at com.example.myblog.controller.admin.BlogController.post(BlogController.java:88)
+	at com.example.myblog.controller.admin.BlogController$$FastClassBySpringCGLIB$$21a82b00.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.example.myblog.controller.admin.BlogController$$EnhancerBySpringCGLIB$$a973e182.post(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'first_picture' in 'class com.example.myblog.entity.Blog'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:374)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy103.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 88 common frames omitted
+
+2022-03-21 21:42:15.309  INFO 25836 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 25836 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-21 21:42:15.313  INFO 25836 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-21 21:42:17.333  INFO 25836 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.559 seconds (JVM running for 3.665)
+2022-03-21 21:42:26.232  INFO 25836 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-21 21:42:26.238  INFO 25836 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-21 21:42:26.239  INFO 25836 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:42:35.835  INFO 25836 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@63814019, {}]}
+2022-03-21 21:42:36.042  INFO 25836 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-21 21:42:36.042  INFO 25836 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:42:40.258  INFO 25836 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2022-03-21 21:42:40.341  INFO 25836 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/blogs
+2022-03-21 21:42:40.341  INFO 25836 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:43:02.877  INFO 25836 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.input', args=[{}]}
+2022-03-21 21:43:02.881  INFO 25836 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/blogs-input
+2022-03-21 21:43:02.881  INFO 25836 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:44:22.655  INFO 25836 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.post', args=[Blog(id=null, title=fafafa, content=### faljlfajfa, firstPicture=https://picsum.photos/id/1, flag=, views=null, commentCount=null, appreciation=false, shareStatement=false, commentAble=false, published=false, recommend=true, createTime=null, updateTime=null, description=fafafafa, type=Type(id=2, name=null, blogList=[]), user=null, typeId=2, userId=null, comments=[]), {}, org.apache.catalina.session.StandardSessionFacade@63814019]}
+2022-03-21 21:44:22.733  INFO 25836 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:44:22.737 ERROR 25836 --- [http-nio-8080-exec-10] c.e.m.hander.ControllerExceptionHandler  : Request URL: http://localhost:8080/admin/blogs,Exception: {}
+
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'my_blog.my_blog' doesn't exist
+### The error may exist in file [D:\idea_projects\myblog\target\classes\mapper\BlogDao.xml]
+### The error may involve com.example.myblog.dao.BlogDao.saveBlog-Inline
+### The error occurred while setting parameters
+### SQL: insert into my_blog(id,title,content,first_picture,flag,views,         comment_count,appreciation,share_statement,comment_able,published,         recommend,create_time,update_time,type_id,user_id,description)         values(?,?,?,?,?,?,                ?,?,?,?,?,                ?,?,?,?,?,?);
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'my_blog.my_blog' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'my_blog.my_blog' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at com.sun.proxy.$Proxy74.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at com.sun.proxy.$Proxy75.saveBlog(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy76.saveBlog(Unknown Source)
+	at com.example.myblog.service.impl.BlogServiceImpl.saveBlog(BlogServiceImpl.java:40)
+	at com.example.myblog.controller.admin.BlogController.post(BlogController.java:88)
+	at com.example.myblog.controller.admin.BlogController$$FastClassBySpringCGLIB$$21a82b00.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at com.example.myblog.controller.admin.BlogController$$EnhancerBySpringCGLIB$$508797d9.post(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'my_blog.my_blog' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2495)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1903)
+	at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1242)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy103.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 88 common frames omitted
+
+2022-03-21 21:44:26.215  INFO 25836 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.IndexController.index', args=[]}
+2022-03-21 21:44:26.221  INFO 25836 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:index
+2022-03-21 21:44:26.221  INFO 25836 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:45:39.605  INFO 24320 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 24320 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-21 21:45:39.608  INFO 24320 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-21 21:45:42.210  INFO 24320 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.188 seconds (JVM running for 4.116)
+2022-03-21 21:45:45.978  INFO 24320 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-21 21:45:45.985  INFO 24320 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-21 21:45:45.985  INFO 24320 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:45:51.298  INFO 24320 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@1edf77ad, {}]}
+2022-03-21 21:45:51.504  INFO 24320 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-21 21:45:51.505  INFO 24320 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:46:03.669  INFO 24320 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2022-03-21 21:46:03.744  INFO 24320 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/blogs
+2022-03-21 21:46:03.745  INFO 24320 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:46:05.117  INFO 24320 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.input', args=[{}]}
+2022-03-21 21:46:05.122  INFO 24320 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/blogs-input
+2022-03-21 21:46:05.122  INFO 24320 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:46:20.789  INFO 24320 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.post', args=[Blog(id=null, title=ljfaljfa, content=fafafa, firstPicture=https://picsum.photos/id/1, flag=, views=null, commentCount=null, appreciation=true, shareStatement=false, commentAble=false, published=false, recommend=true, createTime=null, updateTime=null, description=fafafa, type=Type(id=1, name=null, blogList=[]), user=null, typeId=1, userId=null, comments=[]), {}, org.apache.catalina.session.StandardSessionFacade@1edf77ad]}
+2022-03-21 21:46:20.800  INFO 24320 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/blogs
+2022-03-21 21:46:20.800  INFO 24320 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:46:20.828  INFO 24320 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.blogs', args=[{message=新增成功}, 1]}
+2022-03-21 21:46:20.842  INFO 24320 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:admin/blogs
+2022-03-21 21:46:20.842  INFO 24320 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:47:54.334  INFO 12672 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 12672 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-21 21:47:54.338  INFO 12672 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-21 21:47:56.966  INFO 12672 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.176 seconds (JVM running for 4.203)
+2022-03-21 21:48:01.921  INFO 12672 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-21 21:48:01.927  INFO 12672 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-21 21:48:01.928  INFO 12672 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:48:07.578  INFO 12672 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@70ee7fc3, {}]}
+2022-03-21 21:48:07.786  INFO 12672 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-21 21:48:07.786  INFO 12672 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:48:10.722  INFO 12672 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2022-03-21 21:48:10.807  INFO 12672 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:admin/blogs
+2022-03-21 21:48:10.808  INFO 12672 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:48:35.213  INFO 12672 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2022-03-21 21:48:35.223  INFO 12672 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/blogs
+2022-03-21 21:48:35.223  INFO 12672 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:50:28.648  INFO 15704 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 15704 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-21 21:50:28.652  INFO 15704 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-21 21:50:31.408  INFO 15704 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 3.313 seconds (JVM running for 4.348)
+2022-03-21 21:50:31.522  INFO 15704 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-21 21:50:31.529  INFO 15704 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-21 21:50:31.530  INFO 15704 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:50:37.933  INFO 15704 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@4e5140, {}]}
+2022-03-21 21:50:38.144  INFO 15704 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-21 21:50:38.145  INFO 15704 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:50:41.990  INFO 15704 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2022-03-21 21:50:42.066  INFO 15704 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/blogs
+2022-03-21 21:50:42.067  INFO 15704 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:50:48.037  INFO 15704 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.input', args=[{}]}
+2022-03-21 21:50:48.041  INFO 15704 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Result:admin/blogs-input
+2022-03-21 21:50:48.041  INFO 15704 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:50:51.718  INFO 15704 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2022-03-21 21:50:51.728  INFO 15704 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/blogs
+2022-03-21 21:50:51.728  INFO 15704 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 21:50:52.814  INFO 15704 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.input', args=[{}]}
+2022-03-21 21:50:52.818  INFO 15704 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : Result:admin/blogs-input
+2022-03-21 21:50:52.819  INFO 15704 --- [http-nio-8080-exec-10] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 22:09:50.967  INFO 27392 --- [main] com.example.myblog.MyblogApplication     : Starting MyblogApplication using Java 1.8.0_102 on LAPTOP-814OU37K with PID 27392 (D:\idea_projects\myblog\target\classes started by 123 in D:\idea_projects\myblog)
+2022-03-21 22:09:50.971  INFO 27392 --- [main] com.example.myblog.MyblogApplication     : The following 1 profile is active: "dev"
+2022-03-21 22:09:53.254  INFO 27392 --- [main] com.example.myblog.MyblogApplication     : Started MyblogApplication in 2.817 seconds (JVM running for 3.922)
+2022-03-21 22:10:05.781  INFO 27392 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.loginPage', args=[]}
+2022-03-21 22:10:05.789  INFO 27392 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : Result:admin/login
+2022-03-21 22:10:05.789  INFO 27392 --- [http-nio-8080-exec-1] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 22:10:11.430  INFO 27392 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.LoginController.login', args=[admin, 123456, org.apache.catalina.session.StandardSessionFacade@66ea6283, {}]}
+2022-03-21 22:10:11.649  INFO 27392 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : Result:admin/index
+2022-03-21 22:10:11.650  INFO 27392 --- [http-nio-8080-exec-3] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 22:10:15.161  INFO 27392 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2022-03-21 22:10:15.245  INFO 27392 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : Result:admin/blogs
+2022-03-21 22:10:15.246  INFO 27392 --- [http-nio-8080-exec-2] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 22:10:20.024  INFO 27392 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs/1/delete', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.delete', args=[1, {}]}
+2022-03-21 22:10:20.032  INFO 27392 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/blogs
+2022-03-21 22:10:20.033  INFO 27392 --- [http-nio-8080-exec-4] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 22:10:20.060  INFO 27392 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.blogs', args=[{message=删除成功}, 1]}
+2022-03-21 22:10:20.069  INFO 27392 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : Result:admin/blogs
+2022-03-21 22:10:20.070  INFO 27392 --- [http-nio-8080-exec-5] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 22:10:21.852  INFO 27392 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs/input', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.input', args=[{}]}
+2022-03-21 22:10:21.857  INFO 27392 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : Result:admin/blogs-input
+2022-03-21 22:10:21.857  INFO 27392 --- [http-nio-8080-exec-6] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 22:11:18.491  INFO 27392 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.post', args=[Blog(id=null, title=你和真努力还差了这几点, content=　上学的时候，你是否经历过这样的情形：做的事情和别人一样多，甚至更努力，但成绩依旧不见提高。有时也会怀疑，自己这么努力却不进步，是不是方法出了问题？但真实情况可能是，你只是沉迷于自己的“努力”，却没有思考过这些“努力”有多少会带来切实的进步，又有多少是重复低效的劳动。
+
+　　比如你很想努力比别人学习好，连上课都忍不住在想超过别人，结果分了心，错过了很多知识点，得不偿失。如果思虑过多，这些努力的想法会慢慢演化成焦虑，不断影响你的心绪，导致人在心不在，变成“假”学习，效率自然低。
+
+　　实际上的“真”努力需要的是专注。什么是专注呢？专注就是能够不被其他事情分散注意力，集中自己的全部力量，完成一件自己想完成的事。而这恰恰是努力需要的必备要素。, firstPicture=https://picsum.photos/id/1/, flag=, views=null, commentCount=null, appreciation=true, shareStatement=false, commentAble=false, published=false, recommend=true, createTime=null, updateTime=null, description=好文1, type=Type(id=1, name=null, blogList=[]), user=null, typeId=1, userId=null, comments=[]), {}, org.apache.catalina.session.StandardSessionFacade@66ea6283]}
+2022-03-21 22:11:18.501  INFO 27392 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : Result:redirect:/admin/blogs
+2022-03-21 22:11:18.501  INFO 27392 --- [http-nio-8080-exec-8] com.example.myblog.aspect.LogAspect      : --------doAfter---------
+2022-03-21 22:11:18.512  INFO 27392 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Request:RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='com.example.myblog.controller.admin.BlogController.blogs', args=[{message=新增成功}, 1]}
+2022-03-21 22:11:18.532  INFO 27392 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : Result:admin/blogs
+2022-03-21 22:11:18.532  INFO 27392 --- [http-nio-8080-exec-9] com.example.myblog.aspect.LogAspect      : --------doAfter---------

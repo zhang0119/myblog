@@ -13,4 +13,7 @@ mybatis:
     configuration:
         map-underscore-to-camel-case: true
 
+comment.avatar: /images/avatar.png
+message.avatar: /images/14.jpg
+
 
