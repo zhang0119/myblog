@@ -3,7 +3,7 @@
 
 <!--头部-->
 <div th:fragment="header">
-    <link href="../static/images/zhangy.jpg" th:href="@{/images/zhangy.jpg}" rel="icon" type="image/x-ico">
+    <link href="../static/images/venti.jpg" th:href="@{/images/venti.jpg}" rel="icon" type="image/x-ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
     <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
     <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
@@ -14,31 +14,65 @@
     <link rel="stylesheet" href="../static/css/timeline.css" th:href="@{/css/timeline.css}">
 </div>
 
-<!--导航-->
-<nav id="nav" th:fragment="nav" class="gird-header" style="display: none">
-    <div class="ui container">
-        <div class="ui inverted secondary stackable menu">
-            <h2 class="ui olive header item" style="font-family: STSong">十四</h2>
-            <!--<div class="right m-item item m-mobile-hide">-->
-            <a href="#" th:href="@{/}" class="active m-item item"><i class="home icon"></i>首页</a>
-            <a href="#" th:href="@{/types/-1}" class="m-item item"><i class="clone outline icon"></i>分类</a>
-            <a href="#" th:href="@{/archives}" class="m-item item"><i class="clock icon"></i>时间轴</a>
-            <a href="#" th:href="@{/about}" class="m-item item"><i class="info icon"></i>关于我</a>
-            <!--</div>-->
-            <div class="right m-item item">
-                <form name="search" action="#" th:action="@{/search}" th:method="post" target="_blank">
-                    <div class="ui icon transparent input m-margin-tb-tiny" style="color: white">
-                        <input style="color: white" type="text" name="query" placeholder="Search...." th:value="${query}">
-                        <i onclick="document.forms['search'].submit()" class="search link icon"></i>
-                    </div>
-                </form>
+<!--前端导航-->
+<div id="nav1">
+    <nav class="gird-header">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui olive header item" style="font-family: STSong">十四</h2>
+                <!--<div class="right m-item item m-mobile-hide">-->
+                <a href="#" th:href="@{/}" class="active m-item item" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
+                <a href="#" th:href="@{/types/-1}" class="m-item item" th:classappend="${n==2} ? 'active'"><i class="clone outline icon"></i>分类</a>
+                <a href="#" th:href="@{/archives}" class="m-item item" th:classappend="${n==3} ? 'active'"><i class="clock icon"></i>时间轴</a>
+                <a href="#" th:href="@{/about}" class="m-item item" th:classappend="${n==4} ? 'active'"><i class="info icon"></i>关于我</a>
+                <!--</div>-->
+                <div class="right m-item item">
+                    <form name="search" action="#" th:action="@{/search}" th:method="post" target="_blank">
+                        <div class="ui icon transparent input m-margin-tb-tiny" style="color: white">
+                            <input style="color: white" type="text" name="query" placeholder="Search...." th:value="${query}">
+                            <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-hide" style="display: none">
-        <i class="sidebar icon"></i>
-    </a>
-</nav>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-hide" style="display: none">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+</div>
+
+
+<!--后端导航-->
+<div id="b_nav">
+    <nav class="ui inverted gird-header" >
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui olive header item" style="font-family: STSong">管理后台</h2>
+                <a href="#" th:href="@{/admin/blogs}" class="m-item item m-mobile-hide"><i class="home icon"></i>文章管理</a>
+                <a href="#" th:href="@{/admin/types}" class="m-item item m-mobile-hide"><i class="clone outline icon"></i>分类管理</a>
+                <a href="#" th:href="@{/admin/friendlinks}" class="m-item item m-mobile-hide"><i class="pencil alternate icon"></i>友链管理</a>
+                <a href="#" th:href="@{/admin/pictures}" class=" m-item item m-mobile-hide"><i class="image icon"></i>相册管理</a>
+                <div class="right m-item m-mobile-hide menu">
+                    <div class="ui dropdown  item">
+                        <div class="text">
+                            <img class="ui avatar image" th:src="@{/images/venti.jpg}" src="../../static/images/zhangy.jpg">
+                            <span>十四</span>
+                        </div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="#" th:href="@{/admin/logout}" class="item">注销</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+</div>
+
 
 <!--中间内容-->
 
@@ -99,8 +133,14 @@
         <div class="ui inverted section divider"></div>
     </div>
     </div>
-
 </footer>
+
+<!--公共的js代码-->
+<div th:fragment="commentJs">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+</div>
+
 
 
 
